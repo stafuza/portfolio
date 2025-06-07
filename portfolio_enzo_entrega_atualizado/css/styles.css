@@ -325,6 +325,7 @@ footer {
   border: 1px dashed transparent;
   padding: 0.5rem;
   transition: border-color 0.3s ease;
+  margin-bottom: 1rem;
 }
 
 .editable-content:hover {
