@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo - Portfólio Enzo Stafuza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../css/conteudo.css">
+    <link rel="stylesheet" href="../../../css/conteudo-responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../../../index.html">Enzo Stafuza</a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../../index.html">Início</a></li>
+                    <li><a href="../../../index.html#about">Sobre</a></li>
+                    <li><a href="../../../index.html#subjects">Matérias</a></li>
+                    <li><a href="../../../index.html#contact">Contato</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="py-20 bg-[var(--background)]">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="../../../index.html">Início</a>
+                    <span class="separator">/</span>
+                    <a href="../../../index.html#subjects">Matérias</a>
+                    <span class="separator">/</span>
+                    <a href="../../materia11.html">Técnicas Avançadas de Banco de Dados Relacionais e Não Relacionais</a>
+                    <span class="separator">/</span>
+                    <span>Funciton e Procedure</span>
+                </div>
+
+                <!-- Content Header -->
+                <div class="content-header">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Function e Procedure</h1>
+                    <div class="content-meta">
+                        <span>Matéria: Técnicas Avançadas de Banco de Dados Relacionais e Não Relacionais</span>
+                        <span class="dot">•</span>
+                        <span>Data: <span class="editable-content">15/05/2025</span></span>
+                    </div>
+                </div>
+
+                <!-- Content Body -->
+                <div class="content-body card">
+                    <div class="editable-content">
+                        <div class="content-section">
+                            <h2>Functions e Procedures</h2>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>O que são Functions e Procedures?</h3>
+                            <p>
+                                Functions e Procedures permitem encapsular comandos SQL em rotinas reutilizáveis,
+                                executadas no servidor do banco de dados. Isso reduz o tráfego de rede, aumenta a
+                                segurança e otimiza o desempenho das aplicações.
+                            </p>
+                            <ul>
+                                <li><strong>Functions:</strong> Sempre retornam um valor e podem ser usadas em consultas
+                                    SQL (ex: <code>SELECT</code>).</li>
+                                <li><strong>Procedures:</strong> Podem ou não retornar valores e são executadas via
+                                    comando <code>CALL</code>. São ideais para operações como inserções, atualizações ou
+                                    exclusões.</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Diferenças entre Functions e Procedures</h3>
+                            <table>
+                                <tr>
+                                    <th>Característica</th>
+                                    <th>Function</th>
+                                    <th>Procedure</th>
+                                </tr>
+                                <tr>
+                                    <td>Retorno</td>
+                                    <td>Sempre retorna um valor</td>
+                                    <td>Pode retornar ou não</td>
+                                </tr>
+                                <tr>
+                                    <td>Chamada</td>
+                                    <td>Usada em <code>SELECT</code>, <code>WHERE</code>, etc.</td>
+                                    <td>Executada via <code>CALL</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Uso comum</td>
+                                    <td>Cálculos, consultas, transformações</td>
+                                    <td>Ações como inserir, atualizar, deletar</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Tipos de Functions no PostgreSQL</h3>
+                            <p>
+                                O PostgreSQL suporta diferentes tipos de functions, dependendo da complexidade da
+                                lógica:
+                            </p>
+                            <ul>
+                                <li><strong>Funções em SQL:</strong> Usam comandos SQL simples (ex:
+                                    <code>SELECT</code>). Ideais para operações diretas.</li>
+                                <li><strong>Funções em PL/pgSQL:</strong> Suportam estruturas de controle (ex:
+                                    <code>IF</code>, <code>LOOP</code>) e são usadas para lógicas complexas.</li>
+                                <li><strong>Funções em linguagens externas:</strong> Podem ser escritas em Python, Java,
+                                    C, etc., para algoritmos de alto desempenho.</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Vantagens e Desvantagens</h3>
+                            <p><strong>Vantagens:</strong></p>
+                            <ul>
+                                <li><strong>Reutilização de código:</strong> Blocos modulares evitam repetição.</li>
+                                <li><strong>Menor tráfego de rede:</strong> A lógica é executada no servidor.</li>
+                                <li><strong>Segurança:</strong> Restringe acesso direto a tabelas sensíveis.</li>
+                            </ul>
+                            <p><strong>Desvantagem:</strong></p>
+                            <ul>
+                                <li><strong>Dependência de plataforma:</strong> Sintaxe varia entre SGBDs (ex:
+                                    PostgreSQL vs. Oracle).</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Sintaxe Básica</h3>
+                            <p><strong>Procedure:</strong></p>
+                            <pre><code>CREATE PROCEDURE nome_procedure(IN param1 tipo, OUT resultado tipo)
+LANGUAGE plpgsql
+AS $$
+BEGIN
+  -- Comandos SQL
+END;
+$$;</code></pre>
+                            <p><strong>Function:</strong></p>
+                            <pre><code>CREATE FUNCTION nome_funcao(param1 tipo) RETURNS tipo
+LANGUAGE plpgsql
+AS $$
+DECLARE
+  variavel tipo;
+BEGIN
+  -- Comandos SQL
+  RETURN variavel;
+END;
+$$;</code></pre>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Exemplos Práticos</h3>
+                            <p><strong>Exemplo 1: Function que retorna uma mensagem</strong></p>
+                            <pre><code>CREATE FUNCTION sp_ola() RETURNS TEXT
+LANGUAGE SQL
+AS $$
+  SELECT 'Olá, Pessoal!';
+$$;
+
+-- Uso:
+SELECT sp_ola();</code></pre>
+                            <p><strong>Exemplo 2: Function com filtro por estado</strong></p>
+                            <pre><code>CREATE FUNCTION clientes_por_estado(est VARCHAR)
+RETURNS TABLE(codigo INT, nome VARCHAR, estado VARCHAR)
+LANGUAGE SQL
+AS $$
+  SELECT codigo_cliente, nome_cliente, uf
+  FROM cliente
+  WHERE uf = est;
+$$;
+
+-- Uso:
+SELECT * FROM clientes_por_estado('RJ');</code></pre>
+                            <p><strong>Exemplo 3: Procedure com notificação</strong></p>
+                            <pre><code>CREATE PROCEDURE log_mensagem()
+LANGUAGE plpgsql
+AS $$
+BEGIN
+  RAISE NOTICE 'Registro atualizado com sucesso!';
+END;
+$$;
+
+-- Uso:
+CALL log_mensagem();</code></pre>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Conclusão</h3>
+                            <p>
+                                Functions e Procedures são ferramentas poderosas para otimizar e organizar a lógica de
+                                bancos de dados. Seu uso adequado melhora desempenho, segurança e manutenibilidade,
+                                sendo essencial para aplicações que demandam processamento complexo ou alto volume de
+                                transações. Dominar esses conceitos é um diferencial para profissionais que trabalham
+                                com bancos de dados relacionais e não relacionais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="actions">
+                    <a href="../../materia11.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Voltar para a Matéria
+                    </a>
+                    <a href="https://github.com/stafuza/TAP-BD-RNR/tree/main/FUNCTION%20E%20PROCEDURE" class="github-btn" target="_blank">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year">2025</span> Enzo Stafuza dos Santos</p>
+                <p>Análise e Desenvolvimento de Sistemas - Fatec Jales</p>
+                <div class="footer-social">
+                    <a href="https://github.com/stafuza" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/enzo-stafuza-6370a6263" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Atualizar o ano atual no footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Menu mobile toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo - Portfólio Enzo Stafuza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../css/conteudo.css">
+    <link rel="stylesheet" href="../../../css/conteudo-responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../../../index.html">Enzo Stafuza</a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../../index.html">Início</a></li>
+                    <li><a href="../../../index.html#about">Sobre</a></li>
+                    <li><a href="../../../index.html#subjects">Matérias</a></li>
+                    <li><a href="../../../index.html#contact">Contato</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="py-20 bg-[var(--background)]">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="../../../index.html">Início</a>
+                    <span class="separator">/</span>
+                    <a href="../../../index.html#subjects">Matérias</a>
+                    <span class="separator">/</span>
+                    <a href="../../materia4.html">Engenharia de Software</a>
+                    <span class="separator">/</span>
+                    <span>Modelagem de Sistemas</span>
+                </div>
+
+                <!-- Content Header -->
+                <div class="content-header">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Modelagem de Sistemas</h1>
+                    <div class="content-meta">
+                        <span>Matéria: Engenharia de Software</span>
+                        <span class="dot">•</span>
+                        <span>Data: <span class="editable-content">15/05/2025</span></span>
+                    </div>
+                </div>
+
+                <!-- Content Body -->
+                <div class="content-body card">
+                    <div class="editable-content">
+                        <div class="content-section">
+                            <h2>Modelagem de Sistemas</h2>
+                            <p>
+                                A modelagem de sistemas é um processo de criação de representações abstratas de um
+                                sistema, cada uma focando em aspectos específicos como estrutura, comportamento ou
+                                interações. Esses modelos são essenciais para entender, projetar e comunicar o sistema
+                                antes de sua implementação.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Tipos de Modelos</h3>
+                            <ul>
+                                <li><strong>Modelos de Contexto:</strong> Definem os limites do sistema e suas
+                                    interações com o ambiente externo.</li>
+                                <li><strong>Modelos de Interação:</strong> Mostram como o sistema interage com usuários
+                                    ou outros sistemas.</li>
+                                <li><strong>Modelos Estruturais:</strong> Representam a organização estática do sistema
+                                    (ex: diagramas de classe).</li>
+                                <li><strong>Modelos Comportamentais:</strong> Descrevem o comportamento dinâmico do
+                                    sistema em resposta a eventos.</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Modelos de Contexto</h3>
+                            <p>
+                                Estabelecem o escopo do sistema identificando:
+                            </p>
+                            <ul>
+                                <li>O que faz parte do sistema e o que é externo.</li>
+                                <li>Sistemas adjacentes e suas relações.</li>
+                            </ul>
+                            <blockquote>
+                                Exemplo: Um sistema hospitalar pode interagir com sistemas de agendamento, registros de
+                                pacientes e estatísticas de saúde.
+                            </blockquote>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Modelos de Interação</h3>
+                            <p>
+                                Principais técnicas:
+                            </p>
+                            <ul>
+                                <li><strong>Diagramas de Casos de Uso:</strong> Mostram funcionalidades do sistema e
+                                    atores envolvidos.</li>
+                                <li><strong>Diagramas de Sequência:</strong> Detalham a ordem das interações entre
+                                    componentes.</li>
+                            </ul>
+                            <pre>
+Exemplo de interação em um sistema bancário:
+[Cliente] -> (Realizar Saque) -> [Sistema]
+(Saque) .> (Registrar Movimento) : &lt;&lt;include&gt;&gt;
+  </pre>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Modelos Estruturais</h3>
+                            <p>
+                                Focam na organização estática do sistema:
+                            </p>
+                            <ul>
+                                <li><strong>Diagramas de Classe:</strong> Mostram classes, atributos, métodos e
+                                    relacionamentos.</li>
+                                <li><strong>Diagramas de Componentes:</strong> Representam módulos do sistema e suas
+                                    dependências.</li>
+                            </ul>
+                            <blockquote>
+                                Exemplo: Em um sistema de saúde, classes como <code>Paciente</code>, <code>Médico</code>
+                                e <code>Consulta</code> podem estar relacionadas.
+                            </blockquote>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Modelos Comportamentais</h3>
+                            <p>
+                                Descrevem a dinâmica do sistema:
+                            </p>
+                            <ul>
+                                <li><strong>Dirigidos por Dados:</strong> Diagramas de atividades mostram fluxos de
+                                    processamento.</li>
+                                <li><strong>Dirigidos por Eventos:</strong> Diagramas de máquina de estados representam
+                                    transições entre estados.</li>
+                            </ul>
+                            <pre>
+Exemplo (Máquina de Estados - Microondas):
+[Desligado] --(Ligar)--> [Pronto]
+[Pronto] --(Definir Tempo)--> [Cozinhando]
+  </pre>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Engenharia Dirigida por Modelos (MDE)</h3>
+                            <p>
+                                Abordagem onde modelos são o principal artefato de desenvolvimento:
+                            </p>
+                            <ol>
+                                <li><strong>CIM (Modelo Independente de Computação):</strong> Foca no domínio do
+                                    problema.</li>
+                                <li><strong>PIM (Modelo Independente de Plataforma):</strong> Define a lógica do
+                                    sistema.</li>
+                                <li><strong>PSM (Modelo Específico de Plataforma):</strong> Adapta o PIM a tecnologias
+                                    específicas.</li>
+                            </ol>
+                            <blockquote>
+                                "A MDE visa elevar o nível de abstração, reduzindo a dependência de linguagens de
+                                programação." (OMG)
+                            </blockquote>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Ferramentas e Aplicações</h3>
+                            <ul>
+                                <li><strong>UML:</strong> Padrão para diagramas estruturais e comportamentais.</li>
+                                <li><strong>Ferramentas CASE:</strong> Como Enterprise Architect ou Lucidchart para
+                                    modelagem visual.</li>
+                                <li><strong>Transformação Automática:</strong> Geradores de código a partir de modelos
+                                    PSM.</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Conclusão</h3>
+                            <p>
+                                A modelagem de sistemas é crucial para projetos complexos, permitindo a visualização de
+                                múltiplas perspectivas antes da implementação. Combinada com abordagens como MDE, ela
+                                pode aumentar a produtividade e reduzir erros, embora deva ser adaptada ao contexto do
+                                projeto e às necessidades da equipe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="actions">
+                    <a href="../../materia4.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Voltar para a Matéria
+                    </a>
+                    <a href="https://github.com/stafuza/Projeto-Integrador/blob/main/Git_GitHub.pdf" class="github-btn"
+                        target="_blank">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year">2025</span> Enzo Stafuza dos Santos</p>
+                <p>Análise e Desenvolvimento de Sistemas - Fatec Jales</p>
+                <div class="footer-social">
+                    <a href="https://github.com/stafuza" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/enzo-stafuza-6370a6263" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Atualizar o ano atual no footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Menu mobile toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -41,20 +41,20 @@
       <div class="container">
         <!-- Breadcrumb -->
         <div class="breadcrumb">
-          <a href="../../index.html">Início</a>
+          <a href="../../../index.html">Início</a>
           <span class="separator">/</span>
-          <a href="../../index.html#subjects">Matérias</a>
+          <a href="../../../index.html#subjects">Matérias</a>
           <span class="separator">/</span>
-          <a href="../materia1.html">Projeto Integrador I</a>
+          <a href="../../materia11.html">Técnicas Avançadas de Banco de Dados Relacionais e Não Relacionais</a>
           <span class="separator">/</span>
-          <span>Metodologias de Desenvolvimento de Projetos</span>
+          <span>View</span>
         </div>
 
         <!-- Content Header -->
         <div class="content-header">
-          <h1 class="text-3xl md:text-4xl font-bold mb-2">Metodologias de Desenvolvimento de Projetos</h1>
+          <h1 class="text-3xl md:text-4xl font-bold mb-2">View</h1>
           <div class="content-meta">
-            <span>Matéria: Projeto Integrador I</span>
+            <span>Matéria: Técnicas Avançadas de Banco de Dados Relacionais e Não Relacionais</span>
             <span class="dot">•</span>
             <span>Data: <span class="editable-content">15/05/2025</span></span>
           </div>
@@ -63,19 +63,136 @@
         <!-- Content Body -->
         <div class="content-body card">
           <div class="editable-content">
-            
-            <!-- É AQUI QUE É PRA COLOCAR O CONTEÚDO, FDP-->
+            <div class="content-section">
+              <h2>Views em Bancos de Dados</h2>
+            </div>
 
+            <div class="content-section">
+              <h3>O que são Views?</h3>
+              <p>
+                Uma view é uma tabela virtual baseada no resultado de uma consulta SQL. Ela não armazena dados
+                fisicamente, mas sim a definição de uma consulta que é executada sempre que a view é referenciada.
+              </p>
+              <ul>
+                <li><strong>View Simples:</strong> Consulta a uma única tabela com filtros básicos.</li>
+                <li><strong>View Complexa:</strong> Combina múltiplas tabelas com operações como JOIN, GROUP BY, etc.
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Tipos de Views</h3>
+              <table>
+                <tr>
+                  <th>Tipo</th>
+                  <th>Descrição</th>
+                  <th>Exemplo</th>
+                </tr>
+                <tr>
+                  <td>View Padrão</td>
+                  <td>Consulta não materializada, executada sob demanda</td>
+                  <td><code>CREATE VIEW vw_clientes AS SELECT * FROM clientes WHERE ativo = true;</code></td>
+                </tr>
+                <tr>
+                  <td>Materialized View</td>
+                  <td>Armazena fisicamente o resultado da consulta para melhor desempenho</td>
+                  <td><code>CREATE MATERIALIZED VIEW mv_vendas_mensais AS SELECT ... REFRESH EVERY 1 DAY;</code></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="content-section">
+              <h3>Vantagens do Uso de Views</h3>
+              <ul>
+                <li><strong>Segurança:</strong> Restringe acesso a colunas sensíveis (ex: esconde CPF ou salários)</li>
+                <li><strong>Simplificação:</strong> Esconde complexidade de consultas multi-tabela</li>
+                <li><strong>Consistência:</strong> Centraliza regras de negócio (ex: cálculos de comissão)</li>
+                <li><strong>Desempenho:</strong> Views materializadas aceleram consultas frequentes</li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Sintaxe Básica</h3>
+              <p><strong>Criação:</strong></p>
+              <pre><code>CREATE [OR REPLACE] [TEMP | TEMPORARY] VIEW nome_da_view [(coluna1, coluna2)]
+AS
+  consulta_sql
+[WITH [CASCADED | LOCAL] CHECK OPTION];</code></pre>
+
+              <p><strong>Exemplo Prático:</strong></p>
+              <pre><code>-- View para clientes ativos com endereço completo
+CREATE VIEW vw_clientes_ativos AS
+SELECT c.id, c.nome, e.cidade, e.estado
+FROM clientes c
+JOIN enderecos e ON c.id = e.cliente_id
+WHERE c.ativo = true;</code></pre>
+            </div>
+
+            <div class="content-section">
+              <h3>Views Materializadas</h3>
+              <p>
+                Diferente das views tradicionais, as views materializadas armazenam fisicamente os resultados da
+                consulta e podem ser atualizadas periodicamente:
+              </p>
+              <pre><code>CREATE MATERIALIZED VIEW mv_vendas_2023 AS
+SELECT produto, SUM(valor) as total
+FROM vendas
+WHERE data BETWEEN '2023-01-01' AND '2023-12-31'
+GROUP BY produto;
+
+-- Atualização manual
+REFRESH MATERIALIZED VIEW mv_vendas_2023;
+
+-- Atualização automática (PostgreSQL 9.4+)
+REFRESH MATERIALIZED VIEW CONCURRENTLY mv_vendas_2023;</code></pre>
+            </div>
+
+            <div class="content-section">
+              <h3>Limitações e Cuidados</h3>
+              <ul>
+                <li>Views padrão não melhoram desempenho (são "virtual tables")</li>
+                <li>Alterações em tabelas base podem exigir recriação da view</li>
+                <li>Views materializadas consomem espaço em disco</li>
+                <li>Não suportam parâmetros dinâmicos (para isso, use funções)</li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Exemplo Avançado: View Hierárquica</h3>
+              <p>View recursiva para estrutura organizacional:</p>
+              <pre><code>CREATE RECURSIVE VIEW vw_organograma (id, nome, cargo, supervisor_id, nivel) AS
+-- Caso base: CEO
+SELECT id, nome, cargo, supervisor_id, 0
+FROM funcionarios
+WHERE supervisor_id IS NULL
+
+UNION ALL
+
+-- Caso recursivo: subordinados
+SELECT f.id, f.nome, f.cargo, f.supervisor_id, o.nivel + 1
+FROM funcionarios f
+JOIN vw_organograma o ON f.supervisor_id = o.id;</code></pre>
+            </div>
+
+            <div class="content-section">
+              <h3>Conclusão</h3>
+              <p>
+                Views são ferramentas versáteis que promovem segurança, desempenho e organização em bancos de dados
+                relacionais. Quando combinadas com outras técnicas como stored procedures e funções, tornam-se
+                componentes poderosos para a construção de sistemas escaláveis e de fácil manutenção. O uso adequado de
+                views materializadas pode ser particularmente impactante em ambientes analíticos ou com grandes volumes
+                de dados.
+              </p>
+            </div>
           </div>
         </div>
 
         <!-- Actions -->
         <div class="actions">
-          <a href="../materia1.html" class="back-btn">
+          <a href="../../materia11.html" class="back-btn">
             <i class="fas fa-arrow-left"></i> Voltar para a Matéria
           </a>
-          <a href="https://github.com/stafuza/Projeto-Integrador/blob/main/Git_GitHub.pdf" class="github-btn"
-            target="_blank">
+          <a href="https://github.com/stafuza/TAP-BD-RNR/tree/main/VIEW" class="github-btn" target="_blank">
             <i class="fab fa-github"></i> Ver no GitHub
           </a>
         </div>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo - Portfólio Enzo Stafuza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../css/conteudo.css">
+    <link rel="stylesheet" href="../../../css/conteudo-responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../../../index.html">Enzo Stafuza</a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../../index.html">Início</a></li>
+                    <li><a href="../../../index.html#about">Sobre</a></li>
+                    <li><a href="../../../index.html#subjects">Matérias</a></li>
+                    <li><a href="../../../index.html#contact">Contato</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="py-20 bg-[var(--background)]">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="../../../index.html">Início</a>
+                    <span class="separator">/</span>
+                    <a href="../../../index.html#subjects">Matérias</a>
+                    <span class="separator">/</span>
+                    <a href="../../materia4.html">Engenharia de Software</a>
+                    <span class="separator">/</span>
+                    <span>Diagrama de Classes - UML</span>
+                </div>
+
+                <!-- Content Header -->
+                <div class="content-header">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Diagrama de Classes - UML</h1>
+                    <div class="content-meta">
+                        <span>Matéria: Engenharia de Software</span>
+                        <span class="dot">•</span>
+                        <span>Data: <span class="editable-content">15/05/2025</span></span>
+                    </div>
+                </div>
+
+                <!-- Content Body -->
+                <div class="content-body card">
+                    <div class="editable-content">
+                        <div class="content-section">
+                            <h2>Diagrama de Classes</h2>
+                            <p>
+                                O diagrama de classes é um dos diagramas mais importantes da UML, utilizado para
+                                representar a estrutura estática de um sistema, mostrando as classes, seus atributos,
+                                métodos e os relacionamentos entre elas. Ele é essencial para modelar a lógica do
+                                sistema e facilitar a comunicação entre desenvolvedores.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>O que é um Diagrama de Classes?</h3>
+                            <p>
+                                O diagrama de classes permite visualizar as classes que compõem o sistema, seus
+                                atributos e métodos, além de como essas classes se relacionam entre si. Ele é usado para
+                                definir a estrutura lógica do sistema antes da implementação.
+                            </p>
+                            <ul>
+                                <li><strong>Classes:</strong> Representam os objetos do sistema, contendo atributos
+                                    (dados) e métodos (comportamentos).</li>
+                                <li><strong>Atributos:</strong> Características das classes, como <code>nome</code>,
+                                    <code>idade</code>, etc.</li>
+                                <li><strong>Métodos:</strong> Ações que as classes podem realizar, como
+                                    <code>calcularSaldo()</code>.</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Atributos e Métodos</h3>
+                            <p>
+                                Os atributos e métodos de uma classe podem ter diferentes visibilidades, que definem seu
+                                acesso:
+                            </p>
+                            <ul>
+                                <li><strong>Público (+):</strong> Acessível por qualquer classe.</li>
+                                <li><strong>Privado (-):</strong> Acessível apenas dentro da própria classe.</li>
+                                <li><strong>Protegido (#):</strong> Acessível dentro da classe e por suas subclasses.
+                                </li>
+                            </ul>
+                            <pre><code>class ContaComum {
+    -numeroConta: long
+    -saldoConta: double
+    +depositar(valor: double): void
+    +sacar(valor: double): boolean
+  }</code></pre>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Relacionamentos entre Classes</h3>
+                            <p>
+                                As classes podem se relacionar de várias formas, cada uma representando um tipo de
+                                interação:
+                            </p>
+                            <ul>
+                                <li><strong>Associação:</strong> Relacionamento simples entre classes (ex:
+                                    <code>Pessoa</code> possui <code>Conta</code>).</li>
+                                <li><strong>Agregação:</strong> Relação "todo-parte" onde a parte pode existir sem o
+                                    todo (ex: <code>Departamento</code> contém <code>Funcionários</code>).</li>
+                                <li><strong>Composição:</strong> Relação "todo-parte" mais forte, onde a parte não
+                                    existe sem o todo (ex: <code>Casa</code> contém <code>Quartos</code>).</li>
+                                <li><strong>Herança (Generalização/Especialização):</strong> Relação onde uma classe
+                                    filha herda atributos e métodos da classe pai (ex: <code>ContaEspecial</code> herda
+                                    de <code>ContaComum</code>).</li>
+                            </ul>
+                            <blockquote>
+                                "Os relacionamentos definem como as classes colaboram entre si, refletindo as regras de
+                                negócio do sistema."
+                            </blockquote>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Multiplicidade</h3>
+                            <p>
+                                A multiplicidade define quantos objetos de uma classe podem se relacionar com objetos de
+                                outra classe:
+                            </p>
+                            <ul>
+                                <li><code>1..1</code>: Um para um (ex: um <code>Funcionário</code> tem um
+                                    <code>CPF</code>).</li>
+                                <li><code>1..*</code>: Um para muitos (ex: um <code>Departamento</code> tem vários
+                                    <code>Funcionários</code>).</li>
+                                <li><code>*</code>: Muitos para muitos (ex: um <code>Aluno</code> pode se matricular em
+                                    vários <code>Cursos</code>).</li>
+                            </ul>
+                            <pre><code>class Pessoa {
+    -nome: String
+    -contas: Conta[0..*]  // Uma pessoa pode ter zero ou mais contas
+  }</code></pre>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Exemplo Prático: Sistema Bancário</h3>
+                            <p>
+                                Em um sistema bancário, podemos modelar classes como <code>Conta</code>,
+                                <code>Cliente</code> e <code>Transação</code>:
+                            </p>
+                            <pre><code>class Cliente {
+    -nome: String
+    -cpf: String
+    +adicionarConta(conta: Conta): void
+  }
+
+  class Conta {
+    -numero: String
+    -saldo: double
+    +depositar(valor: double): void
+    +sacar(valor: double): boolean
+  }
+
+  class Transacao {
+    -valor: double
+    -data: Date
+    +executar(): void
+  }</code></pre>
+                            <p>
+                                <strong>Relacionamentos:</strong> Um <code>Cliente</code> pode ter várias
+                                <code>Contas</code>, e uma <code>Conta</code> pode ter várias <code>Transações</code>.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Classes Abstratas e Interfaces</h3>
+                            <p>
+                                Classes abstratas e interfaces são usadas para definir comportamentos comuns:
+                            </p>
+                            <ul>
+                                <li><strong>Classe Abstrata:</strong> Não pode ser instanciada, serve como base para
+                                    outras classes (ex: <code>Animal</code>).</li>
+                                <li><strong>Interface:</strong> Define um contrato que as classes devem implementar (ex:
+                                    <code>Autenticavel</code> com método <code>autenticar()</code>).</li>
+                            </ul>
+                            <pre><code>abstract class Animal {
+    -nome: String
+    +emitirSom(): void
+  }
+
+  interface Autenticavel {
+    +autenticar(senha: String): boolean
+  }</code></pre>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Restrições e Estereótipos</h3>
+                            <p>
+                                Restrições e estereótipos adicionam detalhes ao diagrama:
+                            </p>
+                            <ul>
+                                <li><strong>Restrições:</strong> Regras que devem ser seguidas (ex:
+                                    <code>{saldo >= 0}</code>).</li>
+                                <li><strong>Estereótipos:</strong> Marcam classes com papéis específicos, como
+                                    <code>&lt;&lt;entity&gt;&gt;</code> ou <code>&lt;&lt;service&gt;&gt;</code>.</li>
+                            </ul>
+                            <pre><code>class Conta {
+    -saldo: double {saldo >= 0}
+  }
+
+  &lt;&lt;entity&gt;&gt;
+  class Cliente {
+    -nome: String
+  }</code></pre>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Conclusão</h3>
+                            <p>
+                                O diagrama de classes é uma ferramenta poderosa para modelar a estrutura de um sistema,
+                                facilitando o entendimento e a implementação. Dominar seus conceitos — como classes,
+                                atributos, métodos e relacionamentos — é essencial para qualquer desenvolvedor ou
+                                arquiteto de software. Com ele, é possível criar sistemas mais organizados, escaláveis e
+                                alinhados às necessidades do negócio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="actions">
+                    <a href="../../materia4.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Voltar para a Matéria
+                    </a>
+                    <a href="https://github.com/stafuza/Projeto-Integrador/blob/main/Git_GitHub.pdf" class="github-btn"
+                        target="_blank">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year">2025</span> Enzo Stafuza dos Santos</p>
+                <p>Análise e Desenvolvimento de Sistemas - Fatec Jales</p>
+                <div class="footer-social">
+                    <a href="https://github.com/stafuza" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/enzo-stafuza-6370a6263" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Atualizar o ano atual no footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Menu mobile toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+            });
+        }
+    </script>
+</body>
+
+</html>

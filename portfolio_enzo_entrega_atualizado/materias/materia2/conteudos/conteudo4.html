@@ -47,12 +47,12 @@
           <span class="separator">/</span>
           <a href="../../materia2.html">Estrutura de Dados</a>
           <span class="separator">/</span>
-          <span>Introdução em C:</span>
+          <span>Vetores</span>
         </div>
 
         <!-- Content Header -->
         <div class="content-header">
-          <h1 class="text-3xl md:text-4xl font-bold mb-2">Introdução: C</h1>
+          <h1 class="text-3xl md:text-4xl font-bold mb-2">Vetores</h1>
           <div class="content-meta">
             <span>Matéria: Estrutura de Dados</span>
             <span class="dot">•</span>
@@ -64,39 +64,86 @@
         <div class="content-body card">
           <div class="editable-content">
             <div class="content-section">
-              <h2>Introdução à Linguagem C</h2>
+              <h2>Vetores</h2>
               <p>
-                A linguagem C é uma linguagem de programação estruturada e de alto desempenho, amplamente utilizada no
-                desenvolvimento de sistemas operacionais, compiladores e aplicações de baixo nível.
+                Vetores (arrays unidimensionais) são estruturas fundamentais que armazenam coleções ordenadas de
+                elementos do mesmo tipo, com acesso direto via índices.
               </p>
             </div>
 
             <div class="content-section">
-              <h3>Características Fundamentais</h3>
+              <h3>Características Essenciais</h3>
               <ul>
-                <li><strong>Eficiência:</strong> Controle direto sobre hardware e memória</li>
-                <li><strong>Portabilidade:</strong> Código pode ser compilado em diversas plataformas</li>
-                <li><strong>Flexibilidade:</strong> Combina programação de alto e baixo nível</li>
+                <li><strong>Homogeneidade:</strong> Todos elementos são do mesmo tipo (int, float, char, etc.)</li>
+                <li><strong>Tamanho Fixo:</strong> Dimensão definida na declaração (para alocação estática)</li>
+                <li><strong>Contiguidade:</strong> Elementos armazenados em posições consecutivas de memória</li>
+                <li><strong>Indexação:</strong> Acesso via índices inteiros, iniciando em 0</li>
               </ul>
             </div>
 
             <div class="content-section">
-              <h3>Estrutura Básica</h3>
-              <pre><code>#include &lt;stdio.h&gt;  // Biblioteca padrão de I/O
-
-int main() {          // Função principal
-    printf("Hello World!\n");  // Saída básica
-    return 0;         // Retorno do programa
-}</code></pre>
+              <h3>Modelo de Memória</h3>
+              <p>
+                O compilador calcula posições de memória usando:
+                <br><code>endereço_elemento = endereço_base + (índice × sizeof(tipo))</code>
+              </p>
+              <ul>
+                <li>Alocação estática: reserva espaço na stack durante a compilação</li>
+                <li>Alocação dinâmica: usa heap com malloc/calloc</li>
+              </ul>
             </div>
 
             <div class="content-section">
-              <h3>Principais Elementos</h3>
+              <h3>Propriedades de Acesso</h3>
               <ul>
-                <li><code>#include</code>: Diretivas de pré-processador</li>
-                <li><code>main()</code>: Ponto de entrada do programa</li>
-                <li><code>printf()</code>: Função de saída formatada</li>
-                <li><code>return</code>: Código de retorno do programa</li>
+                <li><strong>Complexidade O(1):</strong> Acesso direto a qualquer elemento</li>
+                <li><strong>Localidade Espacial:</strong> Excelente performance em loops devido à pré-fetch</li>
+                <li><strong>Overhead Zero:</strong> Nenhuma metainformação é armazenada</li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Limitações Fundamentais</h3>
+              <ul>
+                <li><strong>Tamanho Imutável:</strong> Não pode ser redimensionado (estático)</li>
+                <li><strong>Sem Verificação:</strong> Acesso fora dos limites causa comportamento indefinido</li>
+                <li><strong>Inflexibilidade:</strong> Inserções/remoções custosas no meio do vetor</li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Comparação Vetor vs Lista</h3>
+              <table>
+                <tr>
+                  <th>Operação</th>
+                  <th>Vetor</th>
+                  <th>Lista</th>
+                </tr>
+                <tr>
+                  <td>Acesso aleatório</td>
+                  <td>O(1)</td>
+                  <td>O(n)</td>
+                </tr>
+                <tr>
+                  <td>Inserção no início</td>
+                  <td>O(n)</td>
+                  <td>O(1)</td>
+                </tr>
+                <tr>
+                  <td>Uso de memória</td>
+                  <td>Ótimo (sem overhead)</td>
+                  <td>Pobre (ponteiros adicionais)</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="content-section">
+              <h3>Casos de Uso Ideais</h3>
+              <ul>
+                <li>Coleções de tamanho conhecido e fixo</li>
+                <li>Aplicações que exigem acesso aleatório frequente</li>
+                <li>Processamento numérico intensivo</li>
+                <li>Implementação de buffers e pilhas estáticas</li>
               </ul>
             </div>
           </div>
@@ -107,7 +154,7 @@ int main() {          // Função principal
           <a href="../../materia2.html" class="back-btn">
             <i class="fas fa-arrow-left"></i> Voltar para a Matéria
           </a>
-          <a href="https://github.com/stafuza/Estrutura-de-Dados/tree/main/c%20(Cristiano)" class="github-btn"
+          <a href="https://github.com/stafuza/Estrutura-de-Dados/tree/main/Aula%202804%20Vetores" class="github-btn"
             target="_blank">
             <i class="fab fa-github"></i> Ver no GitHub
           </a>

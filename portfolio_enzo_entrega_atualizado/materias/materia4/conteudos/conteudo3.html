@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo - Portfólio Enzo Stafuza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../css/conteudo.css">
+    <link rel="stylesheet" href="../../../css/conteudo-responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../../../index.html">Enzo Stafuza</a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../../index.html">Início</a></li>
+                    <li><a href="../../../index.html#about">Sobre</a></li>
+                    <li><a href="../../../index.html#subjects">Matérias</a></li>
+                    <li><a href="../../../index.html#contact">Contato</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="py-20 bg-[var(--background)]">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="../../../index.html">Início</a>
+                    <span class="separator">/</span>
+                    <a href="../../../index.html#subjects">Matérias</a>
+                    <span class="separator">/</span>
+                    <a href="../../materia4.html">Engenharia de Software</a>
+                    <span class="separator">/</span>
+                    <span>Engenharia de Requisitos</span>
+                </div>
+
+                <!-- Content Header -->
+                <div class="content-header">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Engenharia de Requisitos</h1>
+                    <div class="content-meta">
+                        <span>Matéria: Engenharia de Software</span>
+                        <span class="dot">•</span>
+                        <span>Data: <span class="editable-content">15/05/2025</span></span>
+                    </div>
+                </div>
+
+                <!-- Content Body -->
+                <div class="content-body card">
+                    <div class="editable-content">
+                        <div class="content-section">
+                            <h2>Engenharia de Requisitos</h2>
+                            <p>
+                                A Engenharia de Requisitos é o processo de descoberta, análise, documentação e validação
+                                dos serviços que um sistema deve oferecer e das restrições sob as quais ele deve operar.
+                                Esses requisitos refletem as necessidades dos clientes e usuários finais.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Tipos de Requisitos</h3>
+                            <ul>
+                                <li><strong>Requisitos de Usuário:</strong> Declarações abstratas em linguagem natural
+                                    sobre o que o sistema deve fazer. Exemplo: "O sistema deve gerar relatórios mensais
+                                    de custos."</li>
+                                <li><strong>Requisitos de Sistema:</strong> Descrições detalhadas das funcionalidades e
+                                    restrições. Exemplo: "O sistema deve gerar relatórios às 17h30 do último dia útil,
+                                    segregados por clínica e dosagem de medicamentos."</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Requisitos Funcionais vs. Não Funcionais</h3>
+                            <table>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Descrição</th>
+                                    <th>Exemplos</th>
+                                </tr>
+                                <tr>
+                                    <td><strong>Funcionais</strong></td>
+                                    <td>Serviços específicos que o sistema deve fornecer.</td>
+                                    <td>
+                                        <ul>
+                                            <li>Cadastrar pacientes.</li>
+                                            <li>Emitir relatórios de medicamentos.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Não Funcionais</strong></td>
+                                    <td>Restrições sobre o sistema como um todo.</td>
+                                    <td>
+                                        <ul>
+                                            <li><strong>Produto:</strong> Tempo de resposta < 2 segundos.</li>
+                                            <li><strong>Organizacional:</strong> Uso do padrão ISO 27001 para segurança.
+                                            </li>
+                                            <li><strong>Externo:</strong> Conformidade com a LGPD.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Elicitação de Requisitos</h3>
+                            <p>Técnicas para descobrir e entender os requisitos:</p>
+                            <ul>
+                                <li><strong>Entrevistas:</strong> Formais (com roteiro) ou informais.</li>
+                                <li><strong>Cenários:</strong> Descrições de interações típicas. Exemplo: "Cenário de
+                                    coleta de histórico médico com fluxos normais e exceções."</li>
+                                <li><strong>Casos de Uso (UML):</strong> Diagramas que representam interações entre
+                                    atores e sistema.</li>
+                                <li><strong>Etnografia:</strong> Observação imersiva do ambiente de trabalho dos
+                                    usuários.</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Documento de Requisitos (ERS)</h3>
+                            <p>Estrutura padrão (baseada no IEEE):</p>
+                            <ol>
+                                <li><strong>Prefácio:</strong> Histórico de versões e público-alvo.</li>
+                                <li><strong>Introdução:</strong> Objetivos do sistema e alinhamento com negócios.</li>
+                                <li><strong>Requisitos de Usuário:</strong> Funcionalidades em linguagem acessível.</li>
+                                <li><strong>Requisitos de Sistema:</strong> Detalhes técnicos e não funcionais.</li>
+                                <li><strong>Arquitetura:</strong> Visão geral dos módulos e componentes.</li>
+                                <li><strong>Modelos:</strong> Diagramas UML (Casos de Uso, Sequência, etc.).</li>
+                                <li><strong>Anexos:</strong> Especificações de hardware, banco de dados, etc.</li>
+                            </ol>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Validação de Requisitos</h3>
+                            <p>Verificações essenciais:</p>
+                            <ul>
+                                <li><strong>Validade:</strong> O requisito atende a uma necessidade real?</li>
+                                <li><strong>Consistência:</strong> Há conflitos entre requisitos?</li>
+                                <li><strong>Completude:</strong> Todos os cenários estão cobertos?</li>
+                                <li><strong>Realismo:</strong> É tecnicamente viável?</li>
+                                <li><strong>Verificabilidade:</strong> Pode ser testado?</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Gerenciamento de Mudanças</h3>
+                            <p>Processo para lidar com evolução dos requisitos:</p>
+                            <ol>
+                                <li><strong>Identificação:</strong> Detecção do problema ou nova necessidade.</li>
+                                <li><strong>Análise:</strong> Avaliação de impacto e custo.</li>
+                                <li><strong>Implementação:</strong> Ajuste nos documentos e no sistema.</li>
+                                <li><strong>Revisão:</strong> Atualização formal dos requisitos.</li>
+                            </ol>
+                            <blockquote>
+                                "Requisitos mudam porque problemas complexos não podem ser totalmente definidos de
+                                antemão." (Sommerville)
+                            </blockquote>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Conclusão</h3>
+                            <p>
+                                A Engenharia de Requisitos é crítica para o sucesso de projetos de software. Ao dominar
+                                técnicas de elicitação, documentação e gerenciamento de mudanças, equipes reduzem
+                                retrabalhos e entregam sistemas que realmente atendem às expectativas dos stakeholders.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="actions">
+                    <a href="../../materia4.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Voltar para a Matéria
+                    </a>
+                    <a href="https://github.com/stafuza/Projeto-Integrador/blob/main/Git_GitHub.pdf" class="github-btn"
+                        target="_blank">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year">2025</span> Enzo Stafuza dos Santos</p>
+                <p>Análise e Desenvolvimento de Sistemas - Fatec Jales</p>
+                <div class="footer-social">
+                    <a href="https://github.com/stafuza" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/enzo-stafuza-6370a6263" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Atualizar o ano atual no footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Menu mobile toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+            });
+        }
+    </script>
+</body>
+
+</html>

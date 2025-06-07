@@ -41,20 +41,20 @@
       <div class="container">
         <!-- Breadcrumb -->
         <div class="breadcrumb">
-          <a href="../../index.html">Início</a>
+          <a href="../../../index.html">Início</a>
           <span class="separator">/</span>
-          <a href="../../index.html#subjects">Matérias</a>
+          <a href="../../../index.html#subjects">Matérias</a>
           <span class="separator">/</span>
-          <a href="../materia1.html">Projeto Integrador I</a>
+          <a href="../../materia2.html">Estrutura de Dados</a>
           <span class="separator">/</span>
-          <span>Metodologias de Desenvolvimento de Projetos</span>
+          <span>Funções</span>
         </div>
 
         <!-- Content Header -->
         <div class="content-header">
-          <h1 class="text-3xl md:text-4xl font-bold mb-2">Metodologias de Desenvolvimento de Projetos</h1>
+          <h1 class="text-3xl md:text-4xl font-bold mb-2">Funções</h1>
           <div class="content-meta">
-            <span>Matéria: Projeto Integrador I</span>
+            <span>Matéria: Estrutura de Dados</span>
             <span class="dot">•</span>
             <span>Data: <span class="editable-content">15/05/2025</span></span>
           </div>
@@ -63,18 +63,69 @@
         <!-- Content Body -->
         <div class="content-body card">
           <div class="editable-content">
-            
-            <!-- É AQUI QUE É PRA COLOCAR O CONTEÚDO, FDP-->
+            <div class="content-section">
+              <h2>Funções</h2>
+              <p>
+                Funções são blocos de código reutilizáveis que realizam tarefas específicas. Elas ajudam a organizar o
+                código em módulos lógicos e facilitam a manutenção.
+              </p>
+            </div>
 
+            <div class="content-section">
+              <h3>Estrutura de uma Função</h3>
+              <pre><code>tipo_retorno nome_funcao(parâmetros) {
+    // Corpo da função
+    return valor;  // Opcional
+}</code></pre>
+            </div>
+
+            <div class="content-section">
+              <h3>Exemplo Prático</h3>
+              <pre><code>#include &lt;stdio.h&gt;
+
+// Declaração da função
+int soma(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int resultado = soma(5, 3);  // Chamada da função
+    printf("Resultado: %d\n", resultado);
+    return 0;
+}</code></pre>
+            </div>
+
+            <div class="content-section">
+              <h3>Tipos de Funções</h3>
+              <ul>
+                <li><strong>Com retorno:</strong> Devem incluir <code>return</code></li>
+                <li><strong>Sem retorno:</strong> Usam <code>void</code></li>
+                <li><strong>Com parâmetros:</strong> Recebem valores de entrada</li>
+                <li><strong>Sem parâmetros:</strong> Parênteses vazios</li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Passagem de Parâmetros</h3>
+              <pre><code>// Por valor (cópia)
+void incremento(int x) {
+    x++;
+}
+
+// Por referência (original)
+void incremento_ptr(int *x) {
+    (*x)++;
+}</code></pre>
+            </div>
           </div>
         </div>
 
         <!-- Actions -->
         <div class="actions">
-          <a href="../materia1.html" class="back-btn">
+          <a href="../../materia2.html" class="back-btn">
             <i class="fas fa-arrow-left"></i> Voltar para a Matéria
           </a>
-          <a href="https://github.com/stafuza/Projeto-Integrador/blob/main/Git_GitHub.pdf" class="github-btn"
+          <a href="https://github.com/stafuza/Estrutura-de-Dados/tree/main/Aula%202303/Funções" class="github-btn"
             target="_blank">
             <i class="fab fa-github"></i> Ver no GitHub
           </a>

@@ -47,12 +47,12 @@
           <span class="separator">/</span>
           <a href="../../materia2.html">Estrutura de Dados</a>
           <span class="separator">/</span>
-          <span>Introdução em C:</span>
+          <span>Matrizes</span>
         </div>
 
         <!-- Content Header -->
         <div class="content-header">
-          <h1 class="text-3xl md:text-4xl font-bold mb-2">Introdução: C</h1>
+          <h1 class="text-3xl md:text-4xl font-bold mb-2">Matrizes</h1>
           <div class="content-meta">
             <span>Matéria: Estrutura de Dados</span>
             <span class="dot">•</span>
@@ -64,39 +64,62 @@
         <div class="content-body card">
           <div class="editable-content">
             <div class="content-section">
-              <h2>Introdução à Linguagem C</h2>
+              <h2>Matrizes</h2>
               <p>
-                A linguagem C é uma linguagem de programação estruturada e de alto desempenho, amplamente utilizada no
-                desenvolvimento de sistemas operacionais, compiladores e aplicações de baixo nível.
+                Matrizes representam uma extensão natural dos vetores para duas dimensões, formando estruturas tabulares
+                essenciais para computação numérica e processamento de dados multidimensionais.
               </p>
             </div>
 
             <div class="content-section">
-              <h3>Características Fundamentais</h3>
+              <h3>Conceitos Fundamentais</h3>
               <ul>
-                <li><strong>Eficiência:</strong> Controle direto sobre hardware e memória</li>
-                <li><strong>Portabilidade:</strong> Código pode ser compilado em diversas plataformas</li>
-                <li><strong>Flexibilidade:</strong> Combina programação de alto e baixo nível</li>
+                <li><strong>Estrutura de Armazenamento:</strong> Na memória, matrizes são armazenadas em <em>ordem
+                    row-major</em> (linhas consecutivas)</li>
+                <li><strong>Dimensões Fixas:</strong> Em C, o tamanho deve ser conhecido em tempo de compilação (para
+                  alocação estática)</li>
+                <li><strong>Tipos Homogêneos:</strong> Todos elementos devem ser do mesmo tipo (int, float, char, etc.)
+                </li>
               </ul>
             </div>
 
             <div class="content-section">
-              <h3>Estrutura Básica</h3>
-              <pre><code>#include &lt;stdio.h&gt;  // Biblioteca padrão de I/O
-
-int main() {          // Função principal
-    printf("Hello World!\n");  // Saída básica
-    return 0;         // Retorno do programa
-}</code></pre>
+              <h3>Representação Matemática vs Implementação</h3>
+              <p>
+                Enquanto na matemática matrizes são representadas como A<sub>m×n</sub>, em C são declaradas como
+                <code>tipo nome[linhas][colunas]</code>, com índices iniciando em 0.
+              </p>
             </div>
 
             <div class="content-section">
-              <h3>Principais Elementos</h3>
+              <h3>Hierarquia de Acesso</h3>
+              <ol>
+                <li>O compilador calcula o deslocamento de memória usando: <code>offset = (i * n_colunas) + j</code>
+                </li>
+                <li>Cada elemento ocupa <code>sizeof(tipo)</code> bytes consecutivos</li>
+                <li>O acesso <code>matriz[i][j]</code> é convertido para <code>*(matriz + (i * n_colunas) + j)</code>
+                </li>
+              </ol>
+            </div>
+
+            <div class="content-section">
+              <h3>Limitações e Considerações</h3>
               <ul>
-                <li><code>#include</code>: Diretivas de pré-processador</li>
-                <li><code>main()</code>: Ponto de entrada do programa</li>
-                <li><code>printf()</code>: Função de saída formatada</li>
-                <li><code>return</code>: Código de retorno do programa</li>
+                <li><strong>Alocação Contígua:</strong> Todas linhas são armazenadas sequencialmente na memória</li>
+                <li><strong>Overhead de Cálculo:</strong> Acesso a elementos requer cálculo de posição relativa</li>
+                <li><strong>Cache Efficiency:</strong> Iterar por linhas (row-major) é mais eficiente que por colunas
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Casos Especiais</h3>
+              <ul>
+                <li><strong>Matrizes Triangulares:</strong> Podem ser otimizadas para armazenamento em vetor</li>
+                <li><strong>Matrizes Esparsas:</strong> Estruturas alternativas (listas ligadas) são mais eficientes
+                </li>
+                <li><strong>Matrizes Dinâmicas:</strong> Requerem ponteiros para ponteiros e alocação individual de
+                  linhas</li>
               </ul>
             </div>
           </div>
@@ -107,7 +130,7 @@ int main() {          // Função principal
           <a href="../../materia2.html" class="back-btn">
             <i class="fas fa-arrow-left"></i> Voltar para a Matéria
           </a>
-          <a href="https://github.com/stafuza/Estrutura-de-Dados/tree/main/c%20(Cristiano)" class="github-btn"
+          <a href="https://github.com/stafuza/Estrutura-de-Dados/tree/main/Aula%203103%20Matriz" class="github-btn"
             target="_blank">
             <i class="fab fa-github"></i> Ver no GitHub
           </a>
