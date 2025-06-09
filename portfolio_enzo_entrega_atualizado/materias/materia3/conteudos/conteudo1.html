@@ -34,7 +34,7 @@
       </nav>
     </div>
   </header>
-  
+
   <!-- Main Content -->
   <main>
     <section class="py-20 bg-[var(--background)]">
@@ -63,9 +63,100 @@
         <!-- Content Body -->
         <div class="content-body card">
           <div class="editable-content">
-            
-            <!-- É AQUI QUE É PRA COLOCAR O CONTEÚDO, FDP-->
+            <div class="content-section">
+              <h2>Técnicas Avançadas de Programação Web e Mobile</h2>
+            </div>
 
+            <div class="content-section">
+              <h3>Introdução ao React</h3>
+              <p>
+                React é uma biblioteca JavaScript criada pelo Facebook para construir interfaces de usuário (UI)
+                dinâmicas e componentizadas. Seu principal diferencial é o uso do <strong>Virtual DOM</strong>, que
+                optimiza a renderização, atualizando apenas as partes necessárias da tela. Isso resulta em aplicações
+                mais rápidas e escaláveis.
+              </p>
+              <ul>
+                <li><strong>Componentização:</strong> A UI é dividida em componentes reutilizáveis (como botões,
+                  formulários, cabeçalhos).</li>
+                <li><strong>JSX:</strong> Sintaxe que mistura HTML com JavaScript, facilitando a criação de templates
+                  dinâmicos.</li>
+                <li><strong>Estado (State):</strong> Permite que componentes armazenem e gerenciem dados que podem mudar
+                  ao longo do tempo (ex: formulários).</li>
+                <li><strong>Hooks:</strong> Funções como <code>useState</code> e <code>useEffect</code> que permitem
+                  gerenciar estado e side effects em componentes funcionais.</li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Firebase: Back-end como Serviço (BaaS)</h3>
+              <p>
+                Firebase é uma plataforma da Google que oferece serviços prontos para back-end, eliminando a necessidade
+                de criar servidores do zero. Principais recursos utilizados:
+              </p>
+              <ul>
+                <li><strong>Firebase Auth:</strong> Autenticação de usuários com e-mail/senha, Google, Facebook, etc.
+                </li>
+                <li><strong>Firestore:</strong> Banco de dados NoSQL em tempo real, ideal para aplicações que exigem
+                  sincronização instantânea (ex: chats).</li>
+                <li><strong>Armazenamento (Storage):</strong> Upload e gerenciamento de arquivos (imagens, vídeos).</li>
+                <li><strong>Hosting:</strong> Deploy automático da aplicação com SSL gratuito.</li>
+              </ul>
+              <blockquote>
+                "Firebase é ideal para projetos que precisam de escalabilidade sem complexidade de infraestrutura."
+              </blockquote>
+            </div>
+
+            <div class="content-section">
+              <h3>Autenticação de Usuários</h3>
+              <p>
+                Implementamos um fluxo completo de autenticação, incluindo:
+              </p>
+              <ul>
+                <li><strong>Cadastro:</strong> Validação de e-mail/senha, criação de contas no Firebase Auth e
+                  tratamento de erros (ex: e-mail já cadastrado).</li>
+                <li><strong>Login:</strong> Verificação de credenciais, redirecionamento pós-autenticação e persistência
+                  de sessão.</li>
+                <li><strong>Recuperação de senha:</strong> Envio de e-mails de redefinição via Firebase.</li>
+                <li><strong>Proteção de rotas:</strong> Bloqueio de páginas restritas para usuários não autenticados.
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Gestão de Dados com Firestore</h3>
+              <p>
+                O Firestore armazena dados em coleções (similares a tabelas) e documentos (registros). Aprendemos:
+              </p>
+              <ul>
+                <li><strong>CRUD:</strong> Operações básicas (Create, Read, Update, Delete) com JavaScript.</li>
+                <li><strong>Consultas:</strong> Filtros por campos, ordenação e paginação.</li>
+                <li><strong>Listeners em tempo real:</strong> Atualização automática da UI quando dados mudam no
+                  servidor.</li>
+                <li><strong>Segurança:</strong> Regras de acesso para proteger dados sensíveis.</li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>React Router: Navegação entre Páginas</h3>
+              <p>
+                Em aplicações Single-Page (SPA), o React Router gerencia a navegação sem recarregar a página toda.
+                Trabalhamos com:
+              </p>
+              <ul>
+                <li><strong>Rotas dinâmicas:</strong> URLs parametrizadas (ex: <code>/lojas/:id</code>).</li>
+                <li><strong>Navegação programática:</strong> Redirecionamento via código (ex: após o login).</li>
+                <li><strong>Rotas aninhadas:</strong> Layouts hierárquicos (ex: painel administrativo).</li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Conclusão</h3>
+              <p>
+                A combinação <strong>React + Firebase</strong> permite desenvolver aplicações completas com front-end
+                moderno e back-end escalável, reduzindo tempo e complexidade. Essas tecnologias são amplamente adotadas
+                no mercado, preparando-nos para desafios reais em desenvolvimento web e mobile.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -74,8 +165,7 @@
           <a href="../../materia3.html" class="back-btn">
             <i class="fas fa-arrow-left"></i> Voltar para a Matéria
           </a>
-          <a href="https://github.com/stafuza/TAP-WM" class="github-btn"
-            target="_blank">
+          <a href="https://github.com/stafuza/TAP-WM" class="github-btn" target="_blank">
             <i class="fab fa-github"></i> Ver no GitHub
           </a>
         </div>

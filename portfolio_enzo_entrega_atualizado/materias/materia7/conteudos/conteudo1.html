@@ -41,20 +41,20 @@
       <div class="container">
         <!-- Breadcrumb -->
         <div class="breadcrumb">
-          <a href="../../index.html">Início</a>
+          <a href="../../../index.html">Início</a>
           <span class="separator">/</span>
-          <a href="../../index.html#subjects">Matérias</a>
+          <a href="../../../index.html#subjects">Matérias</a>
           <span class="separator">/</span>
-          <a href="../materia1.html">Projeto Integrador I</a>
+          <a href="../../materia7.html">Matemática Discreta</a>
           <span class="separator">/</span>
-          <span>Metodologias de Desenvolvimento de Projetos</span>
+          <span>Tabelas Verdade</span>
         </div>
 
         <!-- Content Header -->
         <div class="content-header">
-          <h1 class="text-3xl md:text-4xl font-bold mb-2">Metodologias de Desenvolvimento de Projetos</h1>
+          <h1 class="text-3xl md:text-4xl font-bold mb-2">Tabelas Verdade</h1>
           <div class="content-meta">
-            <span>Matéria: Projeto Integrador I</span>
+            <span>Matéria: Matemática Discreta</span>
             <span class="dot">•</span>
             <span>Data: <span class="editable-content">15/05/2025</span></span>
           </div>
@@ -63,18 +63,103 @@
         <!-- Content Body -->
         <div class="content-body card">
           <div class="editable-content">
-            
-            <!-- É AQUI QUE É PRA COLOCAR O CONTEÚDO, FDP-->
+            <div class="content-section">
+              <h2>Tabelas Verdade</h2>
+              <p>
+                Estudamos as Tabelas Verdade como instrumento para analisar proposições lógicas compostas por
+                conectivos, identificando seus valores lógicos e aplicando conceitos fundamentais da lógica booleana.
+              </p>
+            </div>
 
+            <div class="content-section">
+              <h3>Proposições e Conectivos</h3>
+              <p>
+                As proposições são sentenças que assumem valor verdadeiro (V) ou falso (F). Utilizamos conectivos
+                lógicos (como "e", "ou", "não", "se... então", "se e somente se") para formar proposições compostas.
+              </p>
+              <ul>
+                <li><strong>Negação (~p):</strong> Inverte o valor lógico da proposição.</li>
+                <li><strong>Conjunção (p ^ q):</strong> Verdadeira apenas se ambas forem verdadeiras.</li>
+                <li><strong>Disjunção (p v q):</strong> Falsa apenas se ambas forem falsas.</li>
+                <li><strong>Condicional (p → q):</strong> Falsa apenas se p for verdadeira e q falsa.</li>
+                <li><strong>Bicondicional (p ↔ q):</strong> Verdadeira se p e q tiverem o mesmo valor lógico.</li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Exemplos e Interpretações</h3>
+              <p>
+                Foram apresentados vários exemplos contextualizados, como sentenças do cotidiano e proposições
+                matemáticas. As tabelas verdade foram usadas para determinar os resultados de expressões compostas,
+                como:
+              </p>
+              <ul>
+                <li><code>(2 ≥ 3) e (1/3 &lt; 1/2)</code></li>
+                <li><code>“Toda ave voa” ou “alguns peixes têm escamas”</code></li>
+                <li><code>~[(-3&lt;-1) v (2 = ∛27)] ^ [10 ≥ ~(4 &lt; π)]</code></li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Tautologia, Contradição e Equivalência</h3>
+              <p>
+                Estudamos proposições logicamente válidas (tautologias), falsas (contradições) e proposições
+                equivalentes (mesmo resultado lógico em todas as combinações).
+              </p>
+              <ul>
+                <li><strong>Tautologia:</strong> Sempre verdadeira. Ex: <code>(p ^ ~p) → (q v p)</code></li>
+                <li><strong>Contradição:</strong> Sempre falsa. Ex: <code>(p v ~q) ↔ (~p ^ q)</code></li>
+                <li><strong>Equivalência:</strong> <code>(p → q) ↔ (~q → ~p)</code></li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Aplicações Práticas</h3>
+              <p>
+                As tabelas verdade foram aplicadas em contextos reais, como sistemas eletrônicos e circuitos lógicos.
+                Analisamos uma rede de sensores de uma caldeira com base em proposições como:
+                <code>(A v B) ^ C</code>, determinando as condições para bloquear seu funcionamento.
+              </p>
+              <ul>
+                <li>Portas lógicas modelam o funcionamento de sistemas digitais.</li>
+                <li>Condições de falha combinadas foram representadas por proposições compostas.</li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Negação de Proposições Compostas</h3>
+              <p>
+                Aprendemos a negar proposições compostas utilizando equivalências lógicas clássicas:
+              </p>
+              <ul>
+                <li><code>~(p ^ q) ↔ (~p v ~q)</code></li>
+                <li><code>~(p v q) ↔ (~p ^ ~q)</code></li>
+                <li><code>~(p → q) ↔ (p ^ ~q)</code></li>
+              </ul>
+            </div>
+
+            <div class="content-section">
+              <h3>Propriedades da Lógica</h3>
+              <p>
+                Foram vistas as propriedades algébricas da lógica proposicional, como:
+              </p>
+              <ul>
+                <li><strong>Comutativa:</strong> <code>p ^ q = q ^ p</code>, <code>p v q = q v p</code></li>
+                <li><strong>Associativa:</strong> <code>(p ^ q) ^ z = p ^ (q ^ z)</code></li>
+                <li><strong>Distributiva:</strong> <code>p ^ (q v z) = (p ^ q) v (p ^ z)</code></li>
+                <li><strong>Identidade e Dominação:</strong> <code>p ^ 1 = p</code>, <code>p v 0 = p</code></li>
+                <li><strong>Dupla negação:</strong> <code>~(~p) = p</code></li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <!-- Actions -->
         <div class="actions">
-          <a href="../materia1.html" class="back-btn">
+          <a href="../../materia7.html" class="back-btn">
             <i class="fas fa-arrow-left"></i> Voltar para a Matéria
           </a>
-          <a href="https://github.com/stafuza/Projeto-Integrador/blob/main/Git_GitHub.pdf" class="github-btn"
+          <a href="https://github.com/stafuza/Matematica-Discreta/tree/main/Tabela%20Verdade" class="github-btn"
             target="_blank">
             <i class="fab fa-github"></i> Ver no GitHub
           </a>
