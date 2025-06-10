@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo - Portfólio Enzo Stafuza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../css/conteudo.css">
+    <link rel="stylesheet" href="../../../css/conteudo-responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../../../index.html">Enzo Stafuza</a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../../index.html">Início</a></li>
+                    <li><a href="../../../index.html#about">Sobre</a></li>
+                    <li><a href="../../../index.html#subjects">Matérias</a></li>
+                    <li><a href="../../../index.html#contact">Contato</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="py-20 bg-[var(--background)]">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="../../../index.html">Início</a>
+                    <span class="separator">/</span>
+                    <a href="../../../index.html#subjects">Matérias</a>
+                    <span class="separator">/</span>
+                    <a href="../../materia9.html">Organização de Computadores e Sistemas Operacionais</a>
+                    <span class="separator">/</span>
+                    <span>Metodologias de Desenvolvimento de Projetos</span>
+                </div>
+
+                <!-- Content Header -->
+                <div class="content-header">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Metodologias de Desenvolvimento de Projetos</h1>
+                    <div class="content-meta">
+                        <span>Matéria: Organização de Computadores e Sistemas Operacionais</span>
+                        <span class="dot">•</span>
+                        <span>Data: <span class="editable-content">15/05/2025</span></span>
+                    </div>
+                </div>
+
+                <!-- Content Body -->
+                <div class="content-body card">
+                    <div class="editable-content">
+                        <div class="content-section">
+                            <h2>Barramentos</h2>
+                            <p>
+                                Os barramentos são conjuntos de linhas físicas ou lógicas que permitem a comunicação
+                                entre os diversos componentes de um computador. Eles funcionam como “estradas” internas
+                                que transportam dados, endereços e sinais de controle, conectando a unidade central de
+                                processamento (CPU) à memória, aos dispositivos de entrada/saída e a outros componentes
+                                internos. Sem barramentos, o fluxo de informações dentro do sistema simplesmente não
+                                seria possível.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Funcionamento e Tipos de Comunicação</h3>
+                            <p>
+                                A comunicação através dos barramentos pode ocorrer de forma síncrona, onde todos os
+                                dispositivos são coordenados por um sinal de clock, garantindo uma transmissão ritmada e
+                                previsível de dados; ou de forma assíncrona, onde não há uma sincronização por clock,
+                                exigindo que os dispositivos utilizem sinais de controle específicos para indicar quando
+                                os dados estão prontos para serem transmitidos ou recebidos.
+                            </p>
+                            <p>
+                                Em ambas as formas, os barramentos precisam garantir não apenas a entrega correta dos
+                                dados, mas também o controle sobre quem está enviando ou recebendo no momento, evitando
+                                conflitos de transmissão. Esse controle é fundamental para a estabilidade e desempenho
+                                do sistema.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Classificações dos Barramentos</h3>
+                            <p>
+                                Os barramentos são organizados em três categorias principais: <strong>barramento de
+                                    dados</strong>, <strong>barramento de endereços</strong> e <strong>barramento de
+                                    controle</strong>. O barramento de dados é responsável por transportar as
+                                informações propriamente ditas entre os componentes. Já o barramento de endereços serve
+                                para indicar a localização na memória onde os dados devem ser lidos ou gravados. Por
+                                fim, o barramento de controle leva sinais que determinam a natureza da operação, como
+                                leitura, escrita, ou interrupção.
+                            </p>
+                            <p>
+                                Esses três barramentos trabalham de forma integrada para garantir que as instruções da
+                                CPU sejam corretamente executadas, que os dados sejam lidos ou escritos nos locais
+                                certos da memória e que os dispositivos periféricos possam se comunicar com o
+                                processador de maneira coordenada.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Tipos de Barramentos no Sistema</h3>
+                            <p>
+                                Dentro do sistema computacional, os barramentos também podem ser classificados quanto à
+                                sua função estrutural. O <strong>barramento do sistema</strong>, por exemplo, é aquele
+                                que conecta a CPU diretamente à memória principal e aos controladores de entrada/saída.
+                                Já o <strong>barramento de expansão</strong> permite a conexão de placas adicionais,
+                                como placas de vídeo ou rede, e geralmente é acessado através de slots na placa-mãe. Um
+                                <strong>barramento local</strong>, por sua vez, atua em subsistemas específicos, como no
+                                caso de um disco rígido conectado via barramento SATA.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Padrões de Barramento</h3>
+                            <p>
+                                Alguns padrões de barramento se tornaram amplamente adotados na indústria de tecnologia.
+                                O <strong>PCI (Peripheral Component Interconnect)</strong> foi amplamente utilizado para
+                                conectar periféricos à placa-mãe. Posteriormente, surgiu o <strong>PCI Express
+                                    (PCIe)</strong>, que oferece maior velocidade e eficiência por meio de comunicação
+                                serial em múltiplas faixas. O <strong>USB (Universal Serial Bus)</strong> tornou-se
+                                padrão para conexão de dispositivos externos como teclados, mouses e unidades de
+                                armazenamento. Já o <strong>SATA</strong> é um barramento usado especificamente para
+                                comunicação com dispositivos de armazenamento como HDDs e SSDs.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Importância para o Desempenho do Sistema</h3>
+                            <p>
+                                A largura e a velocidade dos barramentos têm impacto direto no desempenho do sistema. Um
+                                barramento de dados mais largo, por exemplo, permite a transmissão de maiores
+                                quantidades de informação por ciclo. Da mesma forma, barramentos mais rápidos podem
+                                reduzir gargalos entre a CPU e os demais dispositivos, melhorando a eficiência global da
+                                máquina. Em sistemas modernos, o bom funcionamento dos barramentos é essencial para
+                                aproveitar o máximo das capacidades de processadores multicore, memórias rápidas e
+                                dispositivos externos de alto desempenho.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="actions">
+                    <a href="../../materia9.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Voltar para a Matéria
+                    </a>
+                    <a href="https://github.com/stafuza/O.C.S.O/tree/main/Introdução" class="github-btn"
+                        target="_blank">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year">2025</span> Enzo Stafuza dos Santos</p>
+                <p>Análise e Desenvolvimento de Sistemas - Fatec Jales</p>
+                <div class="footer-social">
+                    <a href="https://github.com/stafuza" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/enzo-stafuza-6370a6263" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Atualizar o ano atual no footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Menu mobile toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+            });
+        }
+    </script>
+</body>
+
+</html>

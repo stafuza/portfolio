@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo - Portfólio Enzo Stafuza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../css/conteudo.css">
+    <link rel="stylesheet" href="../../../css/conteudo-responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../../../index.html">Enzo Stafuza</a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../../index.html">Início</a></li>
+                    <li><a href="../../../index.html#about">Sobre</a></li>
+                    <li><a href="../../../index.html#subjects">Matérias</a></li>
+                    <li><a href="../../../index.html#contact">Contato</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="py-20 bg-[var(--background)]">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="../../../index.html">Início</a>
+                    <span class="separator">/</span>
+                    <a href="../../../index.html#subjects">Matérias</a>
+                    <span class="separator">/</span>
+                    <a href="../../materia9.html">Organização de Computadores e Sistemas Operacionais</a>
+                    <span class="separator">/</span>
+                    <span>Metodologias de Desenvolvimento de Projetos</span>
+                </div>
+
+                <!-- Content Header -->
+                <div class="content-header">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Metodologias de Desenvolvimento de Projetos</h1>
+                    <div class="content-meta">
+                        <span>Matéria: Organização de Computadores e Sistemas Operacionais</span>
+                        <span class="dot">•</span>
+                        <span>Data: <span class="editable-content">15/05/2025</span></span>
+                    </div>
+                </div>
+
+                <!-- Content Body -->
+                <div class="content-body card">
+                    <div class="editable-content">
+                        <div class="content-section">
+                            <h2>Organização de Processadores</h2>
+                            <p>
+                                A organização de processadores refere-se à forma como os elementos internos da CPU são
+                                dispostos e interagem para executar instruções de forma eficiente. Entender essa
+                                organização é fundamental para compreender como as operações de software são traduzidas
+                                em ações físicas dentro do hardware, especialmente no contexto da arquitetura moderna
+                                dos computadores.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Arquitetura Interna da CPU</h3>
+                            <p>
+                                Internamente, um processador é composto por diversas unidades responsáveis por tarefas
+                                específicas. Entre elas estão a Unidade de Controle, que interpreta as instruções e
+                                coordena o funcionamento dos demais blocos, e a Unidade Aritmética e Lógica (ULA), que
+                                realiza operações matemáticas e lógicas. Além disso, os registradores desempenham um
+                                papel crucial, armazenando temporariamente os dados e resultados das operações em
+                                andamento.
+                            </p>
+                            <p>
+                                Cada instrução que o processador executa segue um ciclo bem definido: busca da instrução
+                                (fetch), decodificação (decode), execução (execute) e armazenamento do resultado
+                                (store). Esses estágios são continuamente repetidos para processar cada linha de código
+                                que compõe um programa.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Pipeline de Instruções</h3>
+                            <p>
+                                Para melhorar o desempenho, muitos processadores modernos utilizam a técnica de
+                                <strong>pipeline</strong>. Com ela, diferentes estágios do ciclo de instrução são
+                                executados simultaneamente em instruções diferentes. Enquanto uma instrução está sendo
+                                decodificada, outra já pode estar sendo buscada, e uma terceira sendo executada. Esse
+                                paralelismo interno aumenta a quantidade de instruções processadas por unidade de tempo,
+                                otimizando a eficiência do processador.
+                            </p>
+                            <p>
+                                Contudo, o pipeline também apresenta desafios, como os <em>hazards</em>, situações em
+                                que a execução paralela pode causar conflitos de dados ou instruções. Para mitigar esses
+                                problemas, técnicas de predição de desvio, buffers e reordenação de instruções são
+                                frequentemente empregadas.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Multicore e Processamento Paralelo</h3>
+                            <p>
+                                Com a crescente demanda por desempenho, surgiu a necessidade de arquiteturas com
+                                múltiplos núcleos, conhecidas como <strong>multicore</strong>. Cada núcleo funciona como
+                                um processador independente, permitindo que diversas tarefas sejam executadas ao mesmo
+                                tempo. Isso é especialmente útil em aplicações modernas que exigem execução paralela,
+                                como jogos, simulações científicas e softwares de edição.
+                            </p>
+                            <p>
+                                A organização de processadores multicore exige mecanismos sofisticados de gerenciamento
+                                de cache e comunicação entre núcleos para evitar inconsistências e perda de desempenho.
+                                O uso de memórias cache compartilhadas ou exclusivas, assim como o controle de
+                                concorrência, são aspectos críticos nesse tipo de arquitetura.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Conjuntos de Instruções (ISA)</h3>
+                            <p>
+                                A forma como um processador entende e executa comandos está relacionada ao seu conjunto
+                                de instruções, ou <em>Instruction Set Architecture</em> (ISA). Dois exemplos comuns de
+                                ISA são a arquitetura x86, amplamente usada em computadores pessoais, e a arquitetura
+                                ARM, dominante em dispositivos móveis. A escolha da ISA afeta diretamente o desempenho,
+                                consumo de energia e compatibilidade do processador com diferentes tipos de software.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="actions">
+                    <a href="../../materia9.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Voltar para a Matéria
+                    </a>
+                    <a href="https://github.com/stafuza/O.C.S.O/tree/main/Introdução" class="github-btn"
+                        target="_blank">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year">2025</span> Enzo Stafuza dos Santos</p>
+                <p>Análise e Desenvolvimento de Sistemas - Fatec Jales</p>
+                <div class="footer-social">
+                    <a href="https://github.com/stafuza" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/enzo-stafuza-6370a6263" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Atualizar o ano atual no footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Menu mobile toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+            });
+        }
+    </script>
+</body>
+
+</html>

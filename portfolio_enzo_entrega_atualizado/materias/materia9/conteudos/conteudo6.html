@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo - Portfólio Enzo Stafuza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../css/conteudo.css">
+    <link rel="stylesheet" href="../../../css/conteudo-responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../../../index.html">Enzo Stafuza</a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../../index.html">Início</a></li>
+                    <li><a href="../../../index.html#about">Sobre</a></li>
+                    <li><a href="../../../index.html#subjects">Matérias</a></li>
+                    <li><a href="../../../index.html#contact">Contato</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="py-20 bg-[var(--background)]">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="../../../index.html">Início</a>
+                    <span class="separator">/</span>
+                    <a href="../../../index.html#subjects">Matérias</a>
+                    <span class="separator">/</span>
+                    <a href="../../materia9.html">Organização de Computadores e Sistemas Operacionais</a>
+                    <span class="separator">/</span>
+                    <span>Metodologias de Desenvolvimento de Projetos</span>
+                </div>
+
+                <!-- Content Header -->
+                <div class="content-header">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Metodologias de Desenvolvimento de Projetos</h1>
+                    <div class="content-meta">
+                        <span>Matéria: Organização de Computadores e Sistemas Operacionais</span>
+                        <span class="dot">•</span>
+                        <span>Data: <span class="editable-content">15/05/2025</span></span>
+                    </div>
+                </div>
+
+                <!-- Content Body -->
+                <div class="content-body card">
+                    <div class="editable-content">
+                        <div class="content-section">
+                            <h2>Pipeline de Instruções</h2>
+                            <p>
+                                O conceito de <strong>pipeline</strong> é uma das estratégias mais importantes para
+                                melhorar o desempenho de processadores. Assim como em uma linha de montagem industrial,
+                                onde cada etapa do processo ocorre em paralelo com outras, o pipeline divide a execução
+                                de instruções em etapas independentes que podem funcionar simultaneamente. Isso permite
+                                que múltiplas instruções sejam processadas ao mesmo tempo, cada uma em uma fase
+                                diferente.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Funcionamento do Pipeline</h3>
+                            <p>
+                                Tradicionalmente, uma instrução executada pela CPU passa por quatro estágios básicos:
+                                <strong>busca (fetch)</strong>, <strong>decodificação (decode)</strong>,
+                                <strong>execução (execute)</strong> e <strong>armazenamento (store)</strong>. Sem
+                                pipeline, o processador executaria uma instrução por vez, completando todas as fases
+                                antes de iniciar a próxima. Com pipeline, cada estágio pode operar em paralelo com os
+                                outros. Por exemplo, enquanto uma instrução está sendo executada, outra pode estar sendo
+                                decodificada e uma terceira sendo buscada.
+                            </p>
+                            <p>
+                                Esse paralelismo interno permite aumentar significativamente a taxa de processamento,
+                                resultando em melhor aproveitamento dos recursos da CPU. Em um pipeline ideal com quatro
+                                estágios, é possível completar uma instrução por ciclo de clock após o pipeline estar
+                                cheio.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Problemas e Desafios</h3>
+                            <p>
+                                Embora o pipeline traga grandes vantagens de desempenho, ele também apresenta desafios
+                                conhecidos como <strong>hazards</strong>. Existem três tipos principais:
+                            </p>
+                            <p>
+                                <strong>Hazards de dados</strong> ocorrem quando uma instrução depende do resultado de
+                                outra ainda em execução. Já os <strong>hazards de controle</strong> aparecem quando há
+                                desvios de fluxo (como em instruções de condição ou loops), podendo invalidar as
+                                próximas instruções do pipeline. Por fim, os <strong>hazards estruturais</strong> surgem
+                                quando dois estágios do pipeline tentam usar o mesmo recurso do processador ao mesmo
+                                tempo.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Soluções e Otimizações</h3>
+                            <p>
+                                Para contornar esses obstáculos, arquiteturas modernas utilizam várias técnicas. A
+                                <strong>predição de desvios</strong> tenta antecipar o caminho de uma instrução
+                                condicional, reduzindo perdas com desvios errados. O <strong>forwarding</strong> (ou
+                                bypassing) permite que resultados intermediários sejam enviados diretamente para as
+                                instruções seguintes, evitando esperas desnecessárias. Além disso, o
+                                <strong>stalling</strong> pode ser utilizado para pausar temporariamente o pipeline em
+                                situações críticas, embora isso reduza o desempenho.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Pipelines em Arquiteturas Modernas</h3>
+                            <p>
+                                Processadores modernos adotam pipelines com muitos estágios — alguns com mais de 10
+                                fases — para atingir altas frequências de clock. Em arquiteturas superescalares, há
+                                também múltiplos pipelines funcionando em paralelo, permitindo a execução simultânea de
+                                várias instruções. Esse modelo é comum em CPUs de alto desempenho e em arquiteturas como
+                                x86 e ARM.
+                            </p>
+                            <p>
+                                Além disso, pipelines são utilizados não apenas na execução de instruções, mas também em
+                                unidades de processamento gráfico (GPUs), onde seu uso é intensificado em cálculos
+                                paralelos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="actions">
+                    <a href="../../materia9.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Voltar para a Matéria
+                    </a>
+                    <a href="https://github.com/stafuza/O.C.S.O/tree/main/Introdução" class="github-btn"
+                        target="_blank">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year">2025</span> Enzo Stafuza dos Santos</p>
+                <p>Análise e Desenvolvimento de Sistemas - Fatec Jales</p>
+                <div class="footer-social">
+                    <a href="https://github.com/stafuza" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/enzo-stafuza-6370a6263" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Atualizar o ano atual no footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Menu mobile toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+            });
+        }
+    </script>
+</body>
+
+</html>

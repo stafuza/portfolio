@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo - Portfólio Enzo Stafuza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../css/conteudo.css">
+    <link rel="stylesheet" href="../../../css/conteudo-responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../../../index.html">Enzo Stafuza</a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../../index.html">Início</a></li>
+                    <li><a href="../../../index.html#about">Sobre</a></li>
+                    <li><a href="../../../index.html#subjects">Matérias</a></li>
+                    <li><a href="../../../index.html#contact">Contato</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="py-20 bg-[var(--background)]">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="../../../index.html">Início</a>
+                    <span class="separator">/</span>
+                    <a href="../../../index.html#subjects">Matérias</a>
+                    <span class="separator">/</span>
+                    <a href="../../materia9.html">Organização de Computadores e Sistemas Operacionais</a>
+                    <span class="separator">/</span>
+                    <span>Metodologias de Desenvolvimento de Projetos</span>
+                </div>
+
+                <!-- Content Header -->
+                <div class="content-header">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Metodologias de Desenvolvimento de Projetos</h1>
+                    <div class="content-meta">
+                        <span>Matéria: Organização de Computadores e Sistemas Operacionais</span>
+                        <span class="dot">•</span>
+                        <span>Data: <span class="editable-content">15/05/2025</span></span>
+                    </div>
+                </div>
+
+                <!-- Content Body -->
+                <div class="content-body card">
+                    <div class="editable-content">
+                        <div class="content-section">
+                            <h2>Unidade Aritmética e Lógica (ULA)</h2>
+                            <p>
+                                Estudamos a <strong>ULA</strong> — Unidade Aritmética e Lógica — responsável por
+                                realizar as operações matemáticas básicas e lógicas dentro da CPU. Este componente é
+                                essencial no processamento de dados em qualquer computador moderno.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>O que é a ULA?</h3>
+                            <p>
+                                A ULA (em inglês, <em>Arithmetic Logic Unit</em>) é o circuito digital dentro da CPU que
+                                executa operações como soma, subtração, operações booleanas (AND, OR, NOT, XOR) e
+                                comparações entre valores. É considerada a “calculadora” do computador.
+                            </p>
+                            <ul>
+                                <li>Executa operações aritméticas e lógicas bit a bit;</li>
+                                <li>Interage diretamente com os registradores da CPU;</li>
+                                <li>É controlada pela unidade de controle da CPU.</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>História e Evolução</h3>
+                            <p>
+                                O conceito da ULA foi proposto por <strong>John von Neumann</strong> em 1945 no projeto
+                                do computador EDVAC. A primeira implementação prática ocorreu no <strong>computador
+                                    IAS</strong>, construído em 1946. A evolução seguiu de relés e válvulas até
+                                circuitos integrados modernos baseados em transistores.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Objetivo e Funcionamento</h3>
+                            <p>
+                                A ULA realiza cálculos com números representados em <strong>binário com complemento de
+                                    dois</strong>, facilitando operações como subtração e evitando duplicidade de zeros
+                                (positivo e negativo). Os operandos vêm de registradores, e os resultados retornam a
+                                eles ou seguem para a memória.
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Operações Executadas</h3>
+                            <p>
+                                A ULA é capaz de realizar:
+                            </p>
+                            <ul>
+                                <li>Operações aritméticas inteiras (adição, subtração, multiplicação, divisão);</li>
+                                <li>Operações lógicas (AND, OR, XOR, NOT);</li>
+                                <li>Deslocamentos e rotações de bits à esquerda ou direita (com ou sem sinal);</li>
+                                <li>Comparações para definir se um número é maior, menor ou igual ao outro.</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Entradas e Saídas</h3>
+                            <p>
+                                A ULA recebe:
+                            </p>
+                            <ul>
+                                <li><strong>Entradas:</strong> operandos e códigos de operação da unidade de controle;
+                                </li>
+                                <li><strong>Saídas:</strong> resultado do cálculo e, em muitos casos, sinais de condição
+                                    como <em>overflow</em>, <em>zero</em> ou <em>vai-um</em>.</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h3>Operações Complexas e Limitações</h3>
+                            <p>
+                                Embora uma ULA possa ser projetada para executar operações complexas, isso aumenta o
+                                custo, o espaço no chip e o consumo de energia. Por isso, muitas operações são
+                                realizadas por combinação de operações simples já suportadas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="actions">
+                    <a href="../../materia9.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Voltar para a Matéria
+                    </a>
+                    <a href="https://github.com/stafuza/O.C.S.O/tree/main/Introdução" class="github-btn"
+                        target="_blank">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year">2025</span> Enzo Stafuza dos Santos</p>
+                <p>Análise e Desenvolvimento de Sistemas - Fatec Jales</p>
+                <div class="footer-social">
+                    <a href="https://github.com/stafuza" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/enzo-stafuza-6370a6263" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Atualizar o ano atual no footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Menu mobile toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+            });
+        }
+    </script>
+</body>
+
+</html>
