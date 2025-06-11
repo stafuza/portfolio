@@ -1,340 +1,483 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Enzo Stafuza</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="container header-container">
-      <div class="logo">
-        <a href="#home">Enzo Stafuza</a>
-      </div>
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="#home">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#subjects">Matérias</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-        <button class="mobile-menu-btn">
-          <i class="fas fa-bars"></i>
-        </button>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container hero-content">
-      <div class="profile-img">
-        <img class="profile-img-inner" src="./img/pfp.jpg" alt="">
-      </div>
-      <h1>Enzo Stafuza dos Santos</h1>
-      <h2>Análise e Desenvolvimento de Sistemas - AMS</h2>
-      <p>Fatec de Jales (Prof. José Camargo)</p>
-      
-      <div class="editable-content">
-        <p class="editable-hint">
-          "Adicione aqui uma breve descrição sobre você e seus objetivos acadêmicos e profissionais..."
-        </p>
-      </div>
-      
-      <div class="btn-container">
-        <a href="#subjects" class="btn">Ver Matérias</a>
-        <a href="#contact" class="btn btn-secondary">Contato</a>
-      </div>
-      
-      <div class="social-links">
-        <a href="https://github.com/stafuza" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/enzo-stafuza-6370a6263" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>Sobre Mim</h2>
-      
-      <div class="about-grid">
-        <div class="card">
-          <h3>Informações Acadêmicas</h3>
-          <div class="editable-content">
-            <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas - AMS</p>
-            <p><strong>Instituição:</strong> Fatec de Jales (Prof. José Camargo)</p>
-            <p><strong>Semestre Atual:</strong> Primeiro Semestre</p>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Enzo Stafuza</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <a href="#home">Enzo Stafuza</a>
         </div>
-        
-        <div class="card">
-          <h3>Habilidades</h3>
-          <div class="editable-content">
-            
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
-              <div style="background-color: rgba(255,255,255,0.1); padding: 0.5rem; border-radius: 4px;">
-                <div style="height: 8px; background: linear-gradient(to right, var(--primary), var(--secondary)); border-radius: 4px;"></div>
-                <p style="font-size: 0.875rem; margin-top: 0.25rem;">Habilidade 1</p>
-              </div>
-              <div style="background-color: rgba(255,255,255,0.1); padding: 0.5rem; border-radius: 4px;">
-                <div style="height: 8px; background: linear-gradient(to right, var(--primary), var(--secondary)); width: 75%; border-radius: 4px;"></div>
-                <p style="font-size: 0.875rem; margin-top: 0.25rem;">Habilidade 2</p>
-              </div>
-              <div style="background-color: rgba(255,255,255,0.1); padding: 0.5rem; border-radius: 4px;">
-                <div style="height: 8px; background: linear-gradient(to right, var(--primary), var(--secondary)); width: 50%; border-radius: 4px;"></div>
-                <p style="font-size: 0.875rem; margin-top: 0.25rem;">Habilidade 3</p>
-              </div>
-              <div style="background-color: rgba(255,255,255,0.1); padding: 0.5rem; border-radius: 4px;">
-                <div style="height: 8px; background: linear-gradient(to right, var(--primary), var(--secondary)); width: 80%; border-radius: 4px;"></div>
-                <p style="font-size: 0.875rem; margin-top: 0.25rem;">Habilidade 4</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#subjects">Matérias</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+          <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
       </div>
-      
-      <div class="card" style="margin-top: 2rem;">
-        <h3>Biografia</h3>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="profile-img">
+          <img class="profile-img-inner" src="./img/pfp.jpg" alt="" />
+        </div>
+        <h1>Enzo Stafuza dos Santos</h1>
+        <h2>Análise e Desenvolvimento de Sistemas - AMS</h2>
+        <h3>Fatec de Jales (Prof. José Camargo)</h3>
+
         <div class="editable-content">
           <p class="editable-hint">
-            Adicione aqui uma biografia mais detalhada, incluindo seus interesses, 
-            objetivos acadêmicos e profissionais, experiências relevantes e outras 
-            informações que deseja compartilhar...
+            Sou um jovem que está iniciando sua jornada no mundo da tecnologia, com foco em
+            desenvolvimento de sistemas e análise de dados. Busco aprender e crescer como
+            profissional para que lá na frente eu possa ter um futuro digno para mim e para os meus.
+            Este portfólio é uma vitrine do meu progresso e das minhas conquistas acadêmicas na
+            Fatec de Jales. Sinta-se à vontade para explorar as matérias que estou estudando e
+            entrar em contato para colaborações, dicas ou oportunidades.
           </p>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Subjects Section -->
-  <section id="subjects">
-    <div class="container">
-      <h2>Matérias</h2>
-      
-      <div class="subjects-grid">
-        <!-- Matéria 1 -->
-        <div class="card subject-card">
-          <h3>Projeto Integrador I</h3>
-          <div class="editable-content">
-            <p>Desenvolvimento de projetos práticos integrando diferentes tecnologias e conhecimentos adquiridos no curso.</p>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="materias/materia1.html" class="btn">Ver Detalhes</a>
-          </div>
+        <div class="btn-container">
+          <a href="#subjects" class="btn">Ver Matérias</a>
+          <a href="#contact" class="btn btn-secondary">Contato</a>
         </div>
-        
-        <!-- Matéria 2 -->
-        <div class="card subject-card">
-          <h3>Estrutura de Dados</h3>
-          <div class="editable-content">
-            <p>Estudo de estruturas para organização e manipulação eficiente de dados, como listas, pilhas, filas e árvores.</p>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="materias/materia2.html" class="btn">Ver Detalhes</a>
-          </div>
-        </div>
-        
-        <!-- Matéria 3 -->
-        <div class="card subject-card">
-          <h3>Técnicas Avançadas de Programação Web e Mobile</h3>
-          <div class="editable-content">
-            <p>Desenvolvimento de aplicações web e mobile utilizando frameworks e tecnologias modernas.</p>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="materias/materia3.html" class="btn">Ver Detalhes</a>
-          </div>
-        </div>
-        
-        <!-- Matéria 4 -->
-        <div class="card subject-card">
-          <h3>Engenharia de Software</h3>
-          <div class="editable-content">
-            <p>Princípios e práticas para desenvolvimento de software de qualidade, incluindo metodologias e ciclo de vida.</p>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="materias/materia4.html" class="btn">Ver Detalhes</a>
-          </div>
-        </div>
-        
-        <!-- Matéria 5 -->
-        <div class="card subject-card">
-          <h3>Interação Humano Computador</h3>
-          <div class="editable-content">
-            <p>Estudo de interfaces e experiência do usuário para criar sistemas mais intuitivos e acessíveis.</p>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="materias/materia5.html" class="btn">Ver Detalhes</a>
-          </div>
-        </div>
-        
-        <!-- Matéria 6 -->
-        <div class="card subject-card">
-          <h3>Gestão Ágil de Projetos de Software</h3>
-          <div class="editable-content">
-            <p>Metodologias ágeis para gerenciamento de projetos de software, como Scrum, Kanban e XP.</p>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="materias/materia6.html" class="btn">Ver Detalhes</a>
-          </div>
-        </div>
-        
-        <!-- Matéria 7 -->
-        <div class="card subject-card">
-          <h3>Matemática Discreta</h3>
-          <div class="editable-content">
-            <p>Fundamentos matemáticos para ciência da computação, incluindo lógica, teoria dos conjuntos e grafos.</p>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="materias/materia7.html" class="btn">Ver Detalhes</a>
-          </div>
-        </div>
-        
-        <!-- Matéria 8 -->
-        <div class="card subject-card">
-          <h3>Técnicas Avançadas de Programação</h3>
-          <div class="editable-content">
-            <p>Aprofundamento em conceitos avançados de programação, padrões de projeto e boas práticas de codificação.</p>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="materias/materia8.html" class="btn">Ver Detalhes</a>
-          </div>
-        </div>
-        
-        <!-- Matéria 9 -->
-        <div class="card subject-card">
-          <h3>Organização de Computadores e Sistemas Operacionais</h3>
-          <div class="editable-content">
-            <p>Estudo da arquitetura de computadores e funcionamento dos sistemas operacionais modernos.</p>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="materias/materia9.html" class="btn">Ver Detalhes</a>
-          </div>
-        </div>
-        
-        <!-- Matéria 10 -->
-        <div class="card subject-card">
-          <h3>Inteligência Corporativa e Modelos de Negócios na Era Digital</h3>
-          <div class="editable-content">
-            <p>Análise de dados corporativos e modelos de negócios inovadores no contexto da transformação digital.</p>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="materias/materia10.html" class="btn">Ver Detalhes</a>
-          </div>
-        </div>
-        
-        <!-- Matéria 11 -->
-        <div class="card subject-card">
-          <h3>Técnicas Avançadas de Banco de Dados Relacional e Não Relacional</h3>
-          <div class="editable-content">
-            <p>Estudo de bancos de dados SQL e NoSQL, modelagem avançada e otimização de consultas.</p>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="materias/materia11.html" class="btn">Ver Detalhes</a>
-          </div>
-        </div>
-        
-        <!-- Matéria 12 -->
-        <div class="card subject-card">
-          <h3>Língua Inglesa I</h3>
-          <div class="editable-content">
-            <p>Aprovado por proficiência - Conhecimentos básicos e intermediários da língua inglesa para o contexto profissional de TI.</p>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="materias/materia12.html" class="btn">Ver Detalhes</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; <span id="current-year">2025</span> Enzo Stafuza dos Santos</p>
-        <p>Análise e Desenvolvimento de Sistemas - Fatec Jales</p>
-        <div class="footer-social">
+        <div class="social-links">
           <a href="https://github.com/stafuza" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/enzo-stafuza-6370a6263" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/enzo-stafuza-6370a6263"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fab fa-linkedin"></i>
           </a>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script>
-    // Atualizar o ano atual no footer
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-    
-    // Menu mobile toggle
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    if (mobileMenuBtn) {
-      mobileMenuBtn.addEventListener('click', () => {
-        navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
-      });
-    }
-    
-    // Smooth scrolling para links de âncora
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: 'smooth'
-          });
-          
-          // Fechar menu mobile se estiver aberto
-          if (window.innerWidth < 768) {
-            navMenu.style.display = 'none';
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>Sobre Mim</h2>
+
+        <div class="about-grid">
+          <div class="card">
+            <h3>Informações Acadêmicas</h3>
+            <div class="editable-content">
+              <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas - AMS</p>
+              <p><strong>Instituição:</strong> Fatec de Jales (Prof. José Camargo)</p>
+              <p><strong>Semestre Atual:</strong> Primeiro Semestre</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Habilidades</h3>
+            <div class="editable-content">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem">
+                <div
+                  style="
+                    background-color: rgba(255, 255, 255, 0.1);
+                    padding: 0.5rem;
+                    border-radius: 4px;
+                  "
+                >
+                  <div
+                    style="
+                      height: 8px;
+                      background: linear-gradient(to right, var(--primary), var(--secondary));
+                      border-radius: 4px;
+                    "
+                  ></div>
+                  <p style="font-size: 0.875rem; margin-top: 0.25rem">Habilidade 1</p>
+                </div>
+                <div
+                  style="
+                    background-color: rgba(255, 255, 255, 0.1);
+                    padding: 0.5rem;
+                    border-radius: 4px;
+                  "
+                >
+                  <div
+                    style="
+                      height: 8px;
+                      background: linear-gradient(to right, var(--primary), var(--secondary));
+                      width: 75%;
+                      border-radius: 4px;
+                    "
+                  ></div>
+                  <p style="font-size: 0.875rem; margin-top: 0.25rem">C</p>
+                </div>
+                <div
+                  style="
+                    background-color: rgba(255, 255, 255, 0.1);
+                    padding: 0.5rem;
+                    border-radius: 4px;
+                  "
+                >
+                  <div
+                    style="
+                      height: 8px;
+                      background: linear-gradient(to right, var(--primary), var(--secondary));
+                      width: 50%;
+                      border-radius: 4px;
+                    "
+                  ></div>
+                  <p style="font-size: 0.875rem; margin-top: 0.25rem">Habilidade 3</p>
+                </div>
+                <div
+                  style="
+                    background-color: rgba(255, 255, 255, 0.1);
+                    padding: 0.5rem;
+                    border-radius: 4px;
+                  "
+                >
+                  <div
+                    style="
+                      height: 8px;
+                      background: linear-gradient(to right, var(--primary), var(--secondary));
+                      width: 80%;
+                      border-radius: 4px;
+                    "
+                  ></div>
+                  <p style="font-size: 0.875rem; margin-top: 0.25rem">Habilidade 4</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 2rem">
+          <h3>Biografia</h3>
+          <div class="editable-content">
+            <p class="editable-hint">
+              Adicione aqui uma biografia mais detalhada, incluindo seus interesses, objetivos
+              acadêmicos e profissionais, experiências relevantes e outras informações que deseja
+              compartilhar...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section id="subjects">
+      <div class="container">
+        <h2>Matérias</h2>
+
+        <div class="subjects-grid">
+          <!-- Matéria 1 -->
+          <div class="card subject-card">
+            <h3>Projeto Integrador I</h3>
+            <div class="editable-content">
+              <p>
+                Desenvolvimento de projetos práticos integrando diferentes tecnologias e
+                conhecimentos adquiridos no curso.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a href="materias/materia1.html" class="btn">Ver Detalhes</a>
+            </div>
+          </div>
+
+          <!-- Matéria 2 -->
+          <div class="card subject-card">
+            <h3>Estrutura de Dados</h3>
+            <div class="editable-content">
+              <p>
+                Estudo de estruturas para organização e manipulação eficiente de dados, como listas,
+                pilhas, filas e árvores.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a href="materias/materia2.html" class="btn">Ver Detalhes</a>
+            </div>
+          </div>
+
+          <!-- Matéria 3 -->
+          <div class="card subject-card">
+            <h3>Técnicas Avançadas de Programação Web e Mobile</h3>
+            <div class="editable-content">
+              <p>
+                Desenvolvimento de aplicações web e mobile utilizando frameworks e tecnologias
+                modernas.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a href="materias/materia3.html" class="btn">Ver Detalhes</a>
+            </div>
+          </div>
+
+          <!-- Matéria 4 -->
+          <div class="card subject-card">
+            <h3>Engenharia de Software</h3>
+            <div class="editable-content">
+              <p>
+                Princípios e práticas para desenvolvimento de software de qualidade, incluindo
+                metodologias e ciclo de vida.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a href="materias/materia4.html" class="btn">Ver Detalhes</a>
+            </div>
+          </div>
+
+          <!-- Matéria 5 -->
+          <div class="card subject-card">
+            <h3>Interação Humano Computador</h3>
+            <div class="editable-content">
+              <p>
+                Estudo de interfaces e experiência do usuário para criar sistemas mais intuitivos e
+                acessíveis.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a href="materias/materia5.html" class="btn">Ver Detalhes</a>
+            </div>
+          </div>
+
+          <!-- Matéria 6 -->
+          <div class="card subject-card">
+            <h3>Gestão Ágil de Projetos de Software</h3>
+            <div class="editable-content">
+              <p>
+                Metodologias ágeis para gerenciamento de projetos de software, como Scrum, Kanban e
+                XP.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a href="materias/materia6.html" class="btn">Ver Detalhes</a>
+            </div>
+          </div>
+
+          <!-- Matéria 7 -->
+          <div class="card subject-card">
+            <h3>Matemática Discreta</h3>
+            <div class="editable-content">
+              <p>
+                Fundamentos matemáticos para ciência da computação, incluindo lógica, teoria dos
+                conjuntos e grafos.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a href="materias/materia7.html" class="btn">Ver Detalhes</a>
+            </div>
+          </div>
+
+          <!-- Matéria 8 -->
+          <div class="card subject-card">
+            <h3>Técnicas Avançadas de Programação</h3>
+            <div class="editable-content">
+              <p>
+                Aprofundamento em conceitos avançados de programação, padrões de projeto e boas
+                práticas de codificação.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a href="materias/materia8.html" class="btn">Ver Detalhes</a>
+            </div>
+          </div>
+
+          <!-- Matéria 9 -->
+          <div class="card subject-card">
+            <h3>Organização de Computadores e Sistemas Operacionais</h3>
+            <div class="editable-content">
+              <p>
+                Estudo da arquitetura de computadores e funcionamento dos sistemas operacionais
+                modernos.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a href="materias/materia9.html" class="btn">Ver Detalhes</a>
+            </div>
+          </div>
+
+          <!-- Matéria 10 -->
+          <div class="card subject-card">
+            <h3>Inteligência Corporativa e Modelos de Negócios na Era Digital</h3>
+            <div class="editable-content">
+              <p>
+                Análise de dados corporativos e modelos de negócios inovadores no contexto da
+                transformação digital.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a href="materias/materia10.html" class="btn">Ver Detalhes</a>
+            </div>
+          </div>
+
+          <!-- Matéria 11 -->
+          <div class="card subject-card">
+            <h3>Técnicas Avançadas de Banco de Dados Relacional e Não Relacional</h3>
+            <div class="editable-content">
+              <p>
+                Estudo de bancos de dados SQL e NoSQL, modelagem avançada e otimização de consultas.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a href="materias/materia11.html" class="btn">Ver Detalhes</a>
+            </div>
+          </div>
+
+          <!-- Matéria 12 -->
+          <div class="card subject-card">
+            <h3>Língua Inglesa I</h3>
+            <div class="editable-content">
+              <p>
+                Aprovado por proficiência - Conhecimentos básicos e intermediários da língua inglesa
+                para o contexto profissional de TI.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a href="materias/materia12.html" class="btn">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Contato</h3>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span class="editable-content">enzo.santos15@fatec.sp.gov.br</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span class="editable-content">(17) 99793-8925</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="editable-content">Urânia - SP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-social-container">
+            <h3>Redes Sociais</h3>
+            <div class="footer-social">
+              <a
+                href="https://github.com/stafuza"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/enzo-stafuza-6370a6263"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Instagram"
+                class="editable-content"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year">2025</span> Enzo Stafuza dos Santos</p>
+          <p>Análise e Desenvolvimento de Sistemas - Fatec Jales</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Atualizar o ano atual no footer
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+
+      // Menu mobile toggle
+      const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+      const navMenu = document.querySelector(".nav-menu");
+
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener("click", () => {
+          navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
+        });
+      }
+
+      // Smooth scrolling para links de âncora
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+
+            // Fechar menu mobile se estiver aberto
+            if (window.innerWidth < 768) {
+              navMenu.style.display = "none";
+            }
           }
-        }
+        });
       });
-    });
-    
-    // Destacar link de navegação ativo com base na seção visível
-    window.addEventListener('scroll', () => {
-      const sections = document.querySelectorAll('section');
-      const navLinks = document.querySelectorAll('.nav-menu a');
-      
-      let currentSection = '';
-      
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-        const sectionHeight = section.clientHeight;
-        
-        if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
-          currentSection = section.getAttribute('id');
-        }
+
+      // Destacar link de navegação ativo com base na seção visível
+      window.addEventListener("scroll", () => {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-menu a");
+
+        let currentSection = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 100;
+          const sectionHeight = section.clientHeight;
+
+          if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+            currentSection = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${currentSection}`) {
+            link.style.color = "var(--secondary)";
+          } else {
+            link.style.color = "var(--text-primary)";
+          }
+        });
       });
-      
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${currentSection}`) {
-          link.style.color = 'var(--secondary)';
-        } else {
-          link.style.color = 'var(--text-primary)';
-        }
-      });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
