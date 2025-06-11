@@ -95,7 +95,7 @@ header {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(to bottom, #1a1a2e, var(--background));
+  /*background: linear-gradient(to bottom, #1a1a2e, var(--background));*/
   padding-top: 80px;
 }
 
