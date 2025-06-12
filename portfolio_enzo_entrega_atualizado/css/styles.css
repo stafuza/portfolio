@@ -244,7 +244,14 @@ section h2 {
 }
 
 .subject-card {
+  display: flex;
+  flex-direction: column;
   height: 100%;
+}
+
+.subject-card > div {
+  margin-top: auto; /* Isso empurra o botão para baixo */
+  padding-top: 1.5rem; /* Espaçamento consistente */
 }
 
 .subject-tag {
@@ -405,12 +412,14 @@ footer {
 .footer-bottom p {
   margin: 0.25rem 0;
 }
+
 /* Editable Content */
 .editable-content {
   border: 1px dashed transparent;
   padding: 0.5rem;
   transition: border-color 0.3s ease;
   margin-bottom: 1rem;
+  flex-grow: 1; /* Isso faz o conteúdo ocupar todo o espaço disponível */
 }
 
 .editable-content:hover {
@@ -421,6 +430,15 @@ footer {
   color: #636e72;
   font-size: 0.875rem;
 }
+
+
+.biografia {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease;
+}
+
 
 /* Animations */
 @keyframes fadeIn {
