@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conteúdo - Portfólio Enzo Stafuza</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/styles.css" />
+    <link rel="stylesheet" href="../../../css/conteudo.css" />
+    <link rel="stylesheet" href="../../../css/conteudo-responsive.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conteúdo - Portfólio Enzo Stafuza</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../../../css/styles.css">
-  <link rel="stylesheet" href="../../../css/conteudo.css">
-  <link rel="stylesheet" href="../../../css/conteudo-responsive.css">
-</head>
-
-<body>
-  <!-- Header -->
-  <header>
+  <body>
+    <!-- Header -->
     <header>
       <div class="container header-container">
         <div class="logo">
@@ -65,43 +67,62 @@
               <div class="content-section">
                 <h2>Desenvolvimento com .NET e PostgreSQL</h2>
                 <p>
-                  Durante a disciplina de Técnicas Avançadas de Programação, desenvolvemos um sistema web utilizando
-                  <strong>ASP.NET Core MVC</strong> integrado ao banco de dados <strong>PostgreSQL</strong>. O projeto
-                  tinha como objetivo implementar uma relação 1:N entre entidades utilizando Entity Framework.
+                  Durante a disciplina de Técnicas Avançadas de Programação,
+                  desenvolvemos um sistema web utilizando
+                  <strong>ASP.NET Core MVC</strong> integrado ao banco de dados
+                  <strong>PostgreSQL</strong>. O projeto tinha como objetivo
+                  implementar uma relação 1:N entre entidades utilizando Entity
+                  Framework.
                 </p>
               </div>
 
               <div class="content-section">
                 <h3>Criação do Projeto e Configuração</h3>
                 <p>
-                  Iniciamos o desenvolvimento no Visual Studio 2022 com um projeto do tipo <strong>ASP.NET Core Web App
-                    (Model-View-Controller)</strong>. Após isso, instalamos os pacotes necessários via NuGet:
+                  Iniciamos o desenvolvimento no Visual Studio 2022 com um
+                  projeto do tipo
+                  <strong>ASP.NET Core Web App (Model-View-Controller)</strong>.
+                  Após isso, instalamos os pacotes necessários via NuGet:
                 </p>
                 <ul>
-                  <li><code>Install-Package Npgsql.EntityFrameworkCore.PostgreSQL</code></li>
-                  <li><code>Install-Package Microsoft.EntityFrameworkCore.Tools</code></li>
+                  <li>
+                    <code
+                      >Install-Package
+                      Npgsql.EntityFrameworkCore.PostgreSQL</code
+                    >
+                  </li>
+                  <li>
+                    <code
+                      >Install-Package Microsoft.EntityFrameworkCore.Tools</code
+                    >
+                  </li>
                 </ul>
                 <p>
-                  Em seguida, criamos o banco de dados <strong>CrudFornecedorProduto</strong> no pgAdmin e configuramos
-                  a string de conexão no arquivo <code>appsettings.json</code>.
+                  Em seguida, criamos o banco de dados
+                  <strong>CrudFornecedorProduto</strong> no pgAdmin e
+                  configuramos a string de conexão no arquivo
+                  <code>appsettings.json</code>.
                 </p>
               </div>
 
               <div class="content-section">
                 <h3>Modelagem e Contexto</h3>
                 <p>
-                  Definimos duas entidades principais: <strong>Fornecedor</strong> e <strong>Produto</strong>, sendo que
-                  cada fornecedor pode possuir vários produtos. O relacionamento foi definido por meio da propriedade
-                  <code>ICollection&lt;Produto&gt;</code> no modelo Fornecedor. Criamos também o
-                  <code>ApplicationDbContext</code> para registrar os DbSets e configurar o Entity Framework.
+                  Definimos duas entidades principais:
+                  <strong>Fornecedor</strong> e <strong>Produto</strong>, sendo
+                  que cada fornecedor pode possuir vários produtos. O
+                  relacionamento foi definido por meio da propriedade
+                  <code>ICollection&lt;Produto&gt;</code> no modelo Fornecedor.
+                  Criamos também o <code>ApplicationDbContext</code> para
+                  registrar os DbSets e configurar o Entity Framework.
                 </p>
               </div>
 
               <div class="content-section">
                 <h3>Implementando Migrations</h3>
                 <p>
-                  Com os modelos e contexto prontos, utilizamos os seguintes comandos para gerar e aplicar a migration
-                  inicial:
+                  Com os modelos e contexto prontos, utilizamos os seguintes
+                  comandos para gerar e aplicar a migration inicial:
                 </p>
                 <ul>
                   <li><code>Add-Migration Inicial</code></li>
@@ -112,35 +133,43 @@
               <div class="content-section">
                 <h3>Controllers e Views (Scaffold)</h3>
                 <p>
-                  Utilizamos o recurso de <strong>Scaffolding</strong> para gerar automaticamente os controllers e as
-                  views de <code>Produto</code> e <code>Fornecedor</code>, com base no Entity Framework. Isso acelerou a
-                  criação das operações CRUD.
+                  Utilizamos o recurso de <strong>Scaffolding</strong> para
+                  gerar automaticamente os controllers e as views de
+                  <code>Produto</code> e <code>Fornecedor</code>, com base no
+                  Entity Framework. Isso acelerou a criação das operações CRUD.
                 </p>
                 <blockquote>
-                  "O scaffold gerou as views com ações como Criar, Editar, Detalhar e Excluir para ambas as entidades."
+                  "O scaffold gerou as views com ações como Criar, Editar,
+                  Detalhar e Excluir para ambas as entidades."
                 </blockquote>
               </div>
 
               <div class="content-section">
                 <h3>Interface e Estilo</h3>
                 <p>
-                  Personalizamos a página inicial (<code>Index.cshtml</code>) com cards estilizados para navegação.
-                  Também aplicamos melhorias visuais nas páginas de listagem e edição, usando classes do Bootstrap e
-                  efeitos com CSS.
+                  Personalizamos a página inicial (<code>Index.cshtml</code>)
+                  com cards estilizados para navegação. Também aplicamos
+                  melhorias visuais nas páginas de listagem e edição, usando
+                  classes do Bootstrap e efeitos com CSS.
                 </p>
                 <ul>
                   <li>Cards com hover na tela inicial;</li>
                   <li>Botões coloridos para ações de CRUD;</li>
-                  <li>Tabelas com estilo <code>.table-striped</code> e <code>.table-hover</code>.</li>
+                  <li>
+                    Tabelas com estilo <code>.table-striped</code> e
+                    <code>.table-hover</code>.
+                  </li>
                 </ul>
               </div>
 
               <div class="content-section">
                 <h3>Relacionamento 1:N na Prática</h3>
                 <p>
-                  No cadastro de produtos, implementamos a exibição dos fornecedores por meio de um
-                  <code>&lt;select&gt;</code> com <code>ViewData</code> populado pelo controller. Na exibição de
-                  detalhes, o nome do fornecedor também foi exibido, utilizando <code>Include</code> no Entity
+                  No cadastro de produtos, implementamos a exibição dos
+                  fornecedores por meio de um
+                  <code>&lt;select&gt;</code> com <code>ViewData</code> populado
+                  pelo controller. Na exibição de detalhes, o nome do fornecedor
+                  também foi exibido, utilizando <code>Include</code> no Entity
                   Framework.
                 </p>
               </div>
@@ -148,23 +177,27 @@
               <div class="content-section">
                 <h3>Tratamento de Valores Monetários</h3>
                 <p>
-                  Ajustamos a entrada de valores decimais (como preço) para respeitar a cultura brasileira (pt-BR),
-                  evitando erros de conversão entre vírgula e ponto. Isso foi feito configurando a cultura no
+                  Ajustamos a entrada de valores decimais (como preço) para
+                  respeitar a cultura brasileira (pt-BR), evitando erros de
+                  conversão entre vírgula e ponto. Isso foi feito configurando a
+                  cultura no
                   <code>Program.cs</code>:
                 </p>
                 <code>
-    var cultureInfo = new CultureInfo("pt-BR");<br>
-    CultureInfo.DefaultThreadCurrentCulture = cultureInfo;<br>
-    CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
-  </code>
+                  var cultureInfo = new CultureInfo("pt-BR");<br />
+                  CultureInfo.DefaultThreadCurrentCulture = cultureInfo;<br />
+                  CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+                </code>
               </div>
 
               <div class="content-section">
                 <h3>Conclusão</h3>
                 <p>
-                  Com este projeto, consolidamos o uso do ASP.NET Core em conjunto com PostgreSQL, aplicando boas
-                  práticas de arquitetura MVC, relacionamento entre entidades e interface amigável. Este projeto serviu
-                  como base para outros trabalhos realizados ao longo da disciplina.
+                  Com este projeto, consolidamos o uso do ASP.NET Core em
+                  conjunto com PostgreSQL, aplicando boas práticas de
+                  arquitetura MVC, relacionamento entre entidades e interface
+                  amigável. Este projeto serviu como base para outros trabalhos
+                  realizados ao longo da disciplina.
                 </p>
               </div>
             </div>
@@ -175,8 +208,11 @@
             <a href="../../materia8.html" class="back-btn">
               <i class="fas fa-arrow-left"></i> Voltar para a Matéria
             </a>
-            <a href="https://github.com/stafuza/Tecnicas-Avancadas-de-Programacao/tree/main/Trabalhos"
-              class="github-btn" target="_blank">
+            <a
+              href="https://github.com/stafuza/Tecnicas-Avancadas-de-Programacao/tree/main/Trabalhos"
+              class="github-btn"
+              target="_blank"
+            >
               <i class="fab fa-github"></i> Ver no GitHub
             </a>
           </div>
@@ -193,7 +229,9 @@
             <div class="contact-details">
               <div class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <span class="editable-content">enzo.santos15@fatec.sp.gov.br</span>
+                <span class="editable-content"
+                  >enzo.santos15@fatec.sp.gov.br</span
+                >
               </div>
               <div class="contact-item">
                 <i class="fas fa-phone"></i>
@@ -238,7 +276,9 @@
         </div>
 
         <div class="footer-bottom">
-          <p>&copy; <span id="current-year">2025</span> Enzo Stafuza dos Santos</p>
+          <p>
+            &copy; <span id="current-year">2025</span> Enzo Stafuza dos Santos
+          </p>
           <p>Análise e Desenvolvimento de Sistemas - Fatec Jales</p>
         </div>
       </div>
@@ -246,18 +286,19 @@
 
     <script>
       // Atualizar o ano atual no footer
-      document.getElementById('current-year').textContent = new Date().getFullYear();
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
 
       // Menu mobile toggle
-      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-      const navMenu = document.querySelector('.nav-menu');
+      const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+      const navMenu = document.querySelector(".nav-menu");
 
       if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', () => {
-          navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+        mobileMenuBtn.addEventListener("click", () => {
+          navMenu.style.display =
+            navMenu.style.display === "flex" ? "none" : "flex";
         });
       }
     </script>
-</body>
-
+  </body>
 </html>
