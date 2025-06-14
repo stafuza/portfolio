@@ -250,8 +250,8 @@ section h2 {
 }
 
 .subject-card > div {
-  margin-top: auto; /* Isso empurra o botão para baixo */
-  padding-top: 1.5rem; /* Espaçamento consistente */
+  margin-top: auto;
+  padding-top: 1.5rem;
 }
 
 .subject-tag {
@@ -419,7 +419,7 @@ footer {
   padding: 0.5rem;
   transition: border-color 0.3s ease;
   margin-bottom: 1rem;
-  flex-grow: 1; /* Isso faz o conteúdo ocupar todo o espaço disponível */
+  flex-grow: 1;
 }
 
 .editable-content:hover {
